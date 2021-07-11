@@ -1,4 +1,4 @@
-include fpga-settings.mk
+include ../fpga-settings.mk
 
 PROJECT:=rngTest-$(BOARD)
 VIVADO ?= vivado
