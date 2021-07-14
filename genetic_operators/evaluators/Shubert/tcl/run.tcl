@@ -1,6 +1,6 @@
 source tcl/common.tcl
 
-set PROJECT crossoverTest-$BOARD
+set PROJECT shubertTest-$BOARD
 set CONSTRS constraints
 
 # create project
@@ -10,8 +10,10 @@ set_property board_part $XILINX_BOARD [current_project]
 set_property target_language VHDL [current_project]
 
 # reading vhdl files
-read_vhdl ./vhd/crossover.vhd
-read_vhdl ./vhd/top_crossover.vhd
+read_vhdl ./vhd/Approximation_pkg.vhd
+read_vhdl ./vhd/Approximation.vhd
+read_vhdl ./vhd/Subsystem1.vhd
+read_vhdl ./vhd/Subsystem.vhd
 
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
 
@@ -21,8 +23,8 @@ launch_runs synth_1 -jobs 8
 wait_on_run synth_1
 
 # including sim sources
-add_files -fileset sim_1 -norecurse ./vhd/tb_crossover.vhdl
-#
-set_property top tb_crossover [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse ./vhd/tb_shubert.vhd
+##
+set_property top tb_shubert [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 launch_simulation

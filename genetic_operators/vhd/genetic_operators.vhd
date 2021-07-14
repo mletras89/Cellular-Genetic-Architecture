@@ -60,39 +60,42 @@ architecture Behavioral of genetic_operators is
                     Q 	 		: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0):=(OTHERS => '0')
                 );
         end component;
-		
-		-- component that generates random numbers for the crossover component
-		component generate_crossover_vector is
-	    generic( N		 : POSITIVE := 64; resolution : POSITIVE := 6);
-	    port(      random_number  : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-		  	       output         : out STD_LOGIC_VECTOR(N-1 DOWNTO 0)
-			     );
-        end component;
 
-		-- anysotropic selection component
-		component anysotropic_selection is
-	    generic (N: POSITIVE := 4;m: POSITIVE := 3);
+      component crossover is
+      generic(N                : POSITIVE := 4);
+        port(
+          chromosome_one    : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+          chromosome_two    : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+          offspring_one     : out STD_LOGIC_VECTOR(N-1 DOWNTO 0):=(OTHERS=>'0');
+          offspring_two     : out STD_LOGIC_VECTOR(N-1 DOWNTO 0):=(OTHERS=>'0'));
+      end component;
+
+      component anisotropic_selection is
+        generic (N: POSITIVE := 64);
         port (
-                alpha            : in  STD_LOGIC_VECTOR(31 downto 0);    -- alpha value that determines the selection
-                north            : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- north input chromosome
-                south            : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- south input chromosome
-                east             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- east input chromosome
-                west             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- west input chromosome
-                chromosome_one   : out STD_LOGIC_VECTOR(N-1 downto 0);   -- output chromosome one
-                chromosme_two    : out STD_LOGIC_VECTOR(N-1 downto 0));  -- output chromosome two
-        end component;
-		
-		-- crossover component
-		component crossover is
-        generic(N		 : POSITIVE := 4);
-            port (operator  : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-                  chromosome_one    : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-                  chromosome_two    : in  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-                  offspring_one     : out STD_LOGIC_VECTOR(N-1 DOWNTO 0):=(OTHERS=>'0');
-                  offspring_two     : out STD_LOGIC_VECTOR(N-1 DOWNTO 0):=(OTHERS=>'0')
-                    );
-        end component;
-		
+                        random_number    : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- random number used which encodes alpha, P_sel, and P_ind
+                        north            : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- north input chromosome
+                        south            : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- south input chromosome
+                        east             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- east input chromosome
+                        back             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- south input chromosome
+                        front             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- east input chromosome
+                        west             : in  STD_LOGIC_VECTOR(N-1 downto 0);   -- west input chromosome
+                        sel_chromosome   : out STD_LOGIC_VECTOR(N-1 downto 0));  -- output chromosome
+      end component;
+
+      component mutation is
+        generic (N: POSITIVE := 64; resolution:POSITIVE := 6);
+        port (
+              chromosome_one       : in  STD_LOGIC_VECTOR(N-1 downto 0):=(others=>'0');      -- input chromosome
+              chromosome_two       : in  STD_LOGIC_VECTOR(N-1 downto 0):=(others=>'0');      -- input chromosome
+              random_number        : in  STD_LOGIC_VECTOR(N-1 downto 0):=(others=>'0');      -- input random number
+              NewChrom_1           : out STD_LOGIC_VECTOR(N-1 downto 0):=(others=>'0');      -- new chromosome one
+              NewChrom_2           : out STD_LOGIC_VECTOR(N-1 downto 0):=(others=>'0')       -- new chromosome two
+                        );
+      end component;
+
+
+
 		-- mutation component
 		component mutation is
         generic (N: POSITIVE := 4; resolution:POSITIVE := 2);
