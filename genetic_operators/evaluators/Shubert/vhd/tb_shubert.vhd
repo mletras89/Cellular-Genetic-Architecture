@@ -16,28 +16,28 @@ architecture arch of tb_shubert is
 
 signal input1   : std_logic_vector(15 downto 0);
 signal input2   : std_logic_vector(15 downto 0);
-signal output   : std_logic_vector(31 downto 0);
+signal output   : std_logic_vector(15 downto 0);
 
  -- declare record type
     type test_vector is record
         input1   : std_logic_vector(15 downto 0);
         input2   : std_logic_vector(15 downto 0);
-        output   : std_logic_vector(31 downto 0);
+        output   : std_logic_vector(15 downto 0);
     end record;
 
     type test_vector_array is array (natural range <>) of test_vector;
 
 constant test_vectors : test_vector_array := (
-        (x"FFFF", x"eeee", x"ffe3f85a"),
-        (x"BBBB", x"cccc", x"0000a251"),
-        (x"CCCC", x"dddd", x"0003a8e1"),
-        (x"0000", x"ffff", x"00187ea8"),
-        (x"00ff", x"0000", x"001094d4"),
-        (x"0fff", x"1111", x"0007c2c0")
+        (x"FFFF", x"eeee", x"f85a"),
+        (x"BBBB", x"cccc", x"a251"),
+        (x"CCCC", x"dddd", x"a8e1"),
+        (x"0000", x"ffff", x"7ea8"),
+        (x"00ff", x"0000", x"94d4"),
+        (x"0fff", x"1111", x"c2c0")
         );
 
 begin
-    inst_shubert: entity work.Approximation
+    inst_shubert: entity work.evaluator
   	PORT MAP
 	(    In1 => input1,
              In2 => input2,

@@ -10,7 +10,7 @@ set_property board_part $XILINX_BOARD [current_project]
 set_property target_language VHDL [current_project]
 
 # reading vhdl files
-read_vhdl ./vhd/Rastrigin.vhd
+read_vhdl ./vhd/evaluator.vhd
 read_vhdl ./vhd/Rastrigin_pkg.vhd
 
 set_property SOURCE_SET sources_1 [get_filesets sim_1]

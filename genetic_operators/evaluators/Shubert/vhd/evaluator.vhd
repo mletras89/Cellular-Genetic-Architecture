@@ -30,15 +30,15 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
-ENTITY Approximation IS
+ENTITY evaluator IS
   PORT( In1                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
         In2                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
-        Out1                              :   OUT   std_logic_vector(31 DOWNTO 0)  -- sfix32_En20
+        Out1                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix32_En20
         );
-END Approximation;
+END evaluator;
 
 
-ARCHITECTURE rtl OF Approximation IS
+ARCHITECTURE rtl OF evaluator IS
 
   -- Component Declarations
   COMPONENT Subsystem
@@ -66,7 +66,7 @@ ARCHITECTURE rtl OF Approximation IS
   SIGNAL Subsystem1_out1                  : std_logic_vector(15 DOWNTO 0);  -- ufix16
   SIGNAL Subsystem1_out1_signed           : signed(15 DOWNTO 0);  -- sfix16_En10
   SIGNAL Product_out1                     : signed(31 DOWNTO 0);  -- sfix32_En20
-
+  SIGNAL sout                     : std_logic_vector(31 DOWNTO 0);  -- sfix32_En20
 BEGIN
   u_Subsystem : Subsystem
     PORT MAP( In1 => In1,  -- sfix16_En12
@@ -84,7 +84,9 @@ BEGIN
 
   Product_out1 <= Subsystem_out1_signed * Subsystem1_out1_signed;
 
-  Out1 <= std_logic_vector(Product_out1);
+  sout <= std_logic_vector(Product_out1);
+
+  out1 <= sout(15 downto 0);
 
 END rtl;
 

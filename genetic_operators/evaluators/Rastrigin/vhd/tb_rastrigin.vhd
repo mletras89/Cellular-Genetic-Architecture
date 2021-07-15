@@ -37,7 +37,7 @@ constant test_vectors : test_vector_array := (
         );
 
 begin
-    inst_ratrigin: entity work.Rastrigin
+    inst_ratrigin: entity work.evaluator
   	PORT MAP
 	(    In1 => input1,
              In2 => input2,

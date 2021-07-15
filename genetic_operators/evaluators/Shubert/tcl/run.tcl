@@ -11,7 +11,7 @@ set_property target_language VHDL [current_project]
 
 # reading vhdl files
 read_vhdl ./vhd/Approximation_pkg.vhd
-read_vhdl ./vhd/Approximation.vhd
+read_vhdl ./vhd/evaluator.vhd
 read_vhdl ./vhd/Subsystem1.vhd
 read_vhdl ./vhd/Subsystem.vhd
 

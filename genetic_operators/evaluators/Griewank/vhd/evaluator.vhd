@@ -31,15 +31,15 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 USE work.Rastrigin_pkg.ALL;
 
-ENTITY Rastrigin IS
+ENTITY evaluator IS
   PORT( In1                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En10
         In3                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En10
         Out1                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix16_En10
         );
-END Rastrigin;
+END evaluator;
 
 
-ARCHITECTURE rtl OF Rastrigin IS
+ARCHITECTURE rtl OF evaluator IS
 
   -- Constants
   CONSTANT LUT_data                       : vector_of_signed16(0 TO 10) := 
