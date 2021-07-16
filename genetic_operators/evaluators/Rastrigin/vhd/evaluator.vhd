@@ -32,8 +32,8 @@ USE IEEE.numeric_std.ALL;
 USE work.Rastrigin_pkg.ALL;
 
 ENTITY evaluator IS
-  PORT( In1                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
-        In2                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
+  PORT( In1                               :   IN    std_logic_vector(31 DOWNTO 0);  -- sfix16_En12
+        In2                               :   IN    std_logic_vector(31 DOWNTO 0);  -- sfix16_En12
         Out1                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix16_En5
         );
 END evaluator;
@@ -124,11 +124,11 @@ ARCHITECTURE rtl OF evaluator IS
   SIGNAL Add2_out1                        : signed(15 DOWNTO 0);  -- sfix16_En5
 
 BEGIN
-  In1_signed <= signed(In1);
+  In1_signed <= signed(In1(15 downto 0));
 
   Constant1_out1 <= to_unsigned(16#6488#, 16);
 
-  In2_signed <= signed(In2);
+  In2_signed <= signed(In2(15 downto 0));
 
   Product_mul_temp <= In1_signed * In1_signed;
   Product_out1 <= unsigned(Product_mul_temp(30 DOWNTO 15));

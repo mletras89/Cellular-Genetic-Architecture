@@ -14,26 +14,26 @@ end entity;
 
 architecture arch of tb_rastrigin is
 
-signal input1   : std_logic_vector(15 downto 0);
-signal input2   : std_logic_vector(15 downto 0);
+signal input1   : std_logic_vector(31 downto 0);
+signal input2   : std_logic_vector(31 downto 0);
 signal output   : std_logic_vector(15 downto 0);
 
  -- declare record type
     type test_vector is record
-        input1   : std_logic_vector(15 downto 0);
-        input2   : std_logic_vector(15 downto 0);
+        input1   : std_logic_vector(31 downto 0);
+        input2   : std_logic_vector(31 downto 0);
         output   : std_logic_vector(15 downto 0);
     end record;
 
     type test_vector_array is array (natural range <>) of test_vector;
 
 constant test_vectors : test_vector_array := (
-        (x"FFFF", x"eeee", x"0069"),
-        (x"BBBB", x"cccc", x"05cf"),
-        (x"CCCC", x"dddd", x"0335"),
-        (x"0000", x"ffff", x"000d"),
-        (x"00ff", x"0000", x"0043"),
-        (x"0fff", x"1111", x"009f")
+        (x"0000FFFF", x"0000eeee", x"0069"),
+        (x"0000BBBB", x"0000cccc", x"05cf"),
+        (x"0000CCCC", x"0000dddd", x"0335"),
+        (x"00000000", x"0000ffff", x"000d"),
+        (x"000000ff", x"00000000", x"0043"),
+        (x"00000fff", x"00001111", x"009f")
         );
 
 begin
