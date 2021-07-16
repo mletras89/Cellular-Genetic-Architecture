@@ -1,6 +1,6 @@
 include ../fpga-settings.mk
 
-PROJECT:=genetic-Operators-Test-$(BOARD)
+PROJECT:=geneticOperators-Test-$(BOARD)
 VIVADO ?= vivado
 
 
