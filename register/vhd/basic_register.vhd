@@ -46,7 +46,7 @@ begin
 
 	PROCESS(clk,rst)
 	BEGIN
-		IF(rst = '0') THEN
+		IF(rst = '1') THEN
 			q <= (OTHERS => '0');
 		ELSIF (clk'event AND clk='1') THEN
 			--IF EN_WR = '1' THEN
