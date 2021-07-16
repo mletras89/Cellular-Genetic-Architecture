@@ -1,6 +1,6 @@
-include ../../fpga-settings.mk
+include ../../../fpga-settings.mk
 
-PROJECT:=crossoverTest-$(BOARD)
+PROJECT:=mmdpTest-$(BOARD)
 VIVADO ?= vivado
 
 
