@@ -7,7 +7,7 @@ maxones: ## Generates the Vivado Project
 	$(VIVADO) -mode gui -source tcl/run-MaxOne.tcl &
 
 mmdp: ## Generates the Vivado Project 
-	$(VIVADO) -mode gui -source tcl/run-IsoPeaks.tcl &
+	$(VIVADO) -mode gui -source tcl/run-MMDP.tcl &
 
 isopeaks: ## Generates the Vivado Project 
 	$(VIVADO) -mode gui -source tcl/run-IsoPeaks.tcl &
