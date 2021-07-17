@@ -9,54 +9,54 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_genetic_operators_mmdp is
+entity tb_genetic_operators_cont is
 end entity;
 
-architecture arch of tb_genetic_operators_mmdp is
+architecture arch of tb_genetic_operators_cont is
 
 signal clk       : std_logic;
 signal rst       : std_logic;
 signal done      : std_logic;
 signal valid     : std_logic;
 
-signal north              : std_logic_vector(63 downto 0);
-signal south              : std_logic_vector(63 downto 0);
-signal west               : std_logic_vector(63 downto 0);
-signal east               : std_logic_vector(63 downto 0);
-signal front              : std_logic_vector(63 downto 0);
-signal back               : std_logic_vector(63 downto 0);
-signal c                  : std_logic_vector(63 downto 0);
-signal random_number      : std_logic_vector(63 downto 0);
-signal best_individual    : std_logic_vector(63 downto 0);
+signal north              : std_logic_vector(31 downto 0);
+signal south              : std_logic_vector(31 downto 0);
+signal west               : std_logic_vector(31 downto 0);
+signal east               : std_logic_vector(31 downto 0);
+signal front              : std_logic_vector(31 downto 0);
+signal back               : std_logic_vector(31 downto 0);
+signal c                  : std_logic_vector(31 downto 0);
+signal random_number      : std_logic_vector(31 downto 0);
+signal best_individual    : std_logic_vector(31 downto 0);
 signal best_fitness       : std_logic_vector(15 downto 0);
 
  -- declare record type
     type test_vector is record
-          north              : std_logic_vector(63 downto 0);
-          south              : std_logic_vector(63 downto 0);
-          west               : std_logic_vector(63 downto 0);
-          east               : std_logic_vector(63 downto 0);
-          front              : std_logic_vector(63 downto 0);
-          back               : std_logic_vector(63 downto 0);
-          c                  : std_logic_vector(63 downto 0);
-          random_number      : std_logic_vector(63 downto 0);
+          north              : std_logic_vector(31 downto 0);
+          south              : std_logic_vector(31 downto 0);
+          west               : std_logic_vector(31 downto 0);
+          east               : std_logic_vector(31 downto 0);
+          front              : std_logic_vector(31 downto 0);
+          back               : std_logic_vector(31 downto 0);
+          c                  : std_logic_vector(31 downto 0);
+          random_number      : std_logic_vector(31 downto 0);
     end record;
 
     type test_vector_array is array (natural range <>) of test_vector;
 
 constant test_vectors : test_vector_array := (
         -- north, south, west, east, front, back, c, rn, 
-        (x"1111111101234567", x"0123422222222560", x"3333333300000101", x"4444444489abcded", x"5555555589abcdff" ,x"66666666ab323567" ,x"7777777711111111" ,x"1111111122222222"),
-        (x"11111111aaaaaabb", x"c22222222cccccc0", x"3333333300000000", x"44444444bbbbbbba", x"55555555dddddddc" ,x"6666666623462754" ,x"7777777722222222" ,x"1111111133333333"),
-        (x"1111111100000007", x"2222222201234560", x"333333330000ffff", x"4444444489abcdef", x"5555555589abcdef" ,x"6666666698765865" ,x"7777777733333333" ,x"1111111144444444"),
-        (x"1111111101234567", x"2222222201234560", x"333333330000aaaa", x"4444444489abcdef", x"5555555500000000" ,x"6666666625432789" ,x"7777777744444444" ,x"1111111155555555"),
-        (x"1111111111111117", x"2222222201234560", x"333333330000bbbb", x"4444444489abcdef", x"5555555511111111" ,x"6666666645232222" ,x"7777777755555555" ,x"1111111166666666")
+        (x"01234567", x"01234560", x"00000101", x"89abcded", x"89abcdff" ,x"ab323567" ,x"11111111" ,x"22222222"),
+        (x"aaaaaabb", x"ccccccc0", x"00000000", x"bbbbbbba", x"dddddddc" ,x"23462754" ,x"22222222" ,x"33333333"),
+        (x"00000007", x"01234560", x"0000ffff", x"89abcdef", x"89abcdef" ,x"98765865" ,x"33333333" ,x"44444444"),
+        (x"01234567", x"01234560", x"0000aaaa", x"89abcdef", x"00000000" ,x"25432789" ,x"44444444" ,x"55555555"),
+        (x"11111117", x"01234560", x"0000bbbb", x"89abcdef", x"11111111" ,x"45232222" ,x"55555555" ,x"66666666")
         );
 
 begin
-    inst_gen_operators: entity work.genetic_operators_mmdp
+    inst_gen_operators: entity work.genetic_operators_cont
         GENERIC MAP(
-                N => 64, M => 16)
+                N => 32, M => 16)
         PORT MAP(
                   clk      =>  clk,     
                   rst      =>  rst,

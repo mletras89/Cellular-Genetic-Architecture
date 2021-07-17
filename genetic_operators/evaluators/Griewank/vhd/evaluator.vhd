@@ -32,9 +32,9 @@ USE IEEE.numeric_std.ALL;
 USE work.Rastrigin_pkg.ALL;
 
 ENTITY evaluator IS
-  PORT( In1                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En10
-        In3                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En10
-        Out1                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix16_En10
+  PORT( chromosome                               :   IN    std_logic_vector(31 DOWNTO 0);  -- sfix16_En10
+        --In3                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En10
+       fitness                             :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix16_En10
         );
 END evaluator;
 
@@ -83,12 +83,12 @@ ARCHITECTURE rtl OF evaluator IS
   SIGNAL Add_out1                         : signed(15 DOWNTO 0);  -- sfix16_En10
 
 BEGIN
-  In1_signed <= signed(In1);
+  In1_signed <= signed(chromosome(15 downto 0));
 
   Product3_mul_temp <= In1_signed * In1_signed;
   Product3_out1 <= unsigned(Product3_mul_temp(26 DOWNTO 11));
 
-  In3_signed <= signed(In3);
+  In3_signed <= signed(chromosome(31 downto 16));
 
   Product2_mul_temp <= In3_signed * In3_signed;
   Product2_out1 <= unsigned(Product2_mul_temp(26 DOWNTO 11));
@@ -259,7 +259,7 @@ BEGIN
   Add_stage3_add_temp <= Add_op_stage2 + Add_stage3_add_cast;
   Add_out1 <= Add_stage3_add_temp(18 DOWNTO 3);
 
-  Out1 <= std_logic_vector(Add_out1);
+  fitness <= std_logic_vector(Add_out1);
 
 END rtl;
 

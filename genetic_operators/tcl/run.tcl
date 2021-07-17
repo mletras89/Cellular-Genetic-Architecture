@@ -10,7 +10,6 @@ set_property board_part $XILINX_BOARD [current_project]
 set_property target_language VHDL [current_project]
 
 # reading vhdl files
-read_vhdl ./vhd/genetic_operators.vhd
 read_vhdl ./crossover/vhd/crossover.vhd
 read_vhdl ./mutation/vhd/mutation.vhd
 read_vhdl ./selection/vhd/anisotropic_selection.vhd
@@ -32,22 +31,27 @@ if {[string compare $::env(PROBLEM) "rastrigin"] == 0} {
 if {[string compare $::env(PROBLEM) "griewank"] == 0} {
   read_vhdl ./evaluators/Griewank/vhd/evaluator.vhd
   read_vhdl ./vhd/genetic_operators_cont.vhd
+  read_vhdl ./evaluators/Griewank/vhd/Rastrigin_pkg.vhd
+
 }
 
 if {[string compare $::env(PROBLEM) "shubert"] == 0} {
   read_vhdl ./evaluators/Shubert/vhd/evaluator.vhd
   read_vhdl ./vhd/genetic_operators_cont.vhd
+  read_vhdl ./evaluators/Shubert/vhd/Subsystem1.vhd
+  read_vhdl ./evaluators/Shubert/vhd/Subsystem.vhd
+  read_vhdl ./evaluators/Shubert/vhd/Approximation_pkg.vhd
 }
 
 if {[string compare $::env(PROBLEM) "maxones"] == 0} {
-  read_vhdl ./evaluators/MMDP/vhd/evaluator.vhd
-  read_vhdl ./vhd/genetic_operators_mmdp.vhd
+  read_vhdl ./evaluators/Max-Ones/vhd/evaluator.vhd
+  read_vhdl ./vhd/genetic_operators.vhd
 }
 
 
 if {[string compare $::env(PROBLEM) "mmdp"] == 0} {
-  read_vhdl ./evaluators/Max-Ones/vhd/evaluator.vhd
-  read_vhdl ./vhd/genetic_operators.vhd
+  read_vhdl ./evaluators/MMDP/vhd/evaluator.vhd
+  read_vhdl ./vhd/genetic_operators_mmdp.vhd
 }
 
 #read_vhdl ./vhd/top_crossover.vhd
@@ -67,19 +71,18 @@ if {[string compare $::env(PROBLEM) "isopeaks"] == 0} {
 }
 
 if {[string compare $::env(PROBLEM) "rastrigin"] == 0} {
-
-
-
+  add_files -fileset sim_1 -norecurse ./vhd/tb_genetic_operators_cont.vhd
+  set_property top tb_genetic_operators_cont [get_filesets sim_1]
 }
 
 if {[string compare $::env(PROBLEM) "griewank"] == 0} {
-
-
+	add_files -fileset sim_1 -norecurse ./vhd/tb_genetic_operators_cont.vhd
+	set_property top tb_genetic_operators_cont [get_filesets sim_1]
 }
 
 if {[string compare $::env(PROBLEM) "shubert"] == 0} {
-
-
+	add_files -fileset sim_1 -norecurse ./vhd/tb_genetic_operators_cont.vhd
+	set_property top tb_genetic_operators_cont [get_filesets sim_1]
 }
 
 if {[string compare $::env(PROBLEM) "maxones"] == 0} {

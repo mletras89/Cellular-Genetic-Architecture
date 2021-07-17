@@ -14,8 +14,7 @@ end entity;
 
 architecture arch of tb_shubert is
 
-signal input1   : std_logic_vector(15 downto 0);
-signal input2   : std_logic_vector(15 downto 0);
+signal input1   : std_logic_vector(31 downto 0);
 signal output   : std_logic_vector(15 downto 0);
 
  -- declare record type
@@ -39,9 +38,8 @@ constant test_vectors : test_vector_array := (
 begin
     inst_shubert: entity work.evaluator
   	PORT MAP
-	(    In1 => input1,
-             In2 => input2,
-	     Out1 => output 
+	(    chromosome => input1,
+	     fitness => output 
         );
 
     -- Main simulation process.
@@ -52,8 +50,7 @@ begin
 
         for i in test_vectors'range loop
         --for i in 0 to 3 loop
-            input1 <= test_vectors(i).input1;
-            input2 <= test_vectors(i).input2;
+            input1 <= test_vectors(i).input1 & test_vectors(i).input2;
 
             wait for 20 ns;
 

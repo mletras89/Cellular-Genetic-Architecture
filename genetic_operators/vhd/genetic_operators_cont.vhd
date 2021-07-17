@@ -30,9 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 -- resolution must be 5 for the 32 bits chromosome
--- resolution must be 6 for the 32 bits chromosome
+-- resolution must be 6 for the 64 bits chromosome
 
-entity genetic_operators is
+
+entity genetic_operators_cont is
 GENERIC(N  : POSITIVE:=32; M  : POSITIVE :=16; resolution : POSITIVE :=5 );
 			
 	 PORT(
@@ -55,9 +56,9 @@ GENERIC(N  : POSITIVE:=32; M  : POSITIVE :=16; resolution : POSITIVE :=5 );
 			
 			best_individual	: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 			best_fitness	: OUT STD_LOGIC_VECTOR(M-1 DOWNTO 0));
-end genetic_operators;
+end genetic_operators_cont;
 
-architecture Behavioral of genetic_operators is
+architecture Behavioral of genetic_operators_cont is
 	    
     component basic_register is
     generic (N: integer := 8);
@@ -102,12 +103,9 @@ architecture Behavioral of genetic_operators is
 
 
      component evaluator is
-     generic (N: positive := 18; M : positive := 9);  
-	--N is the size of the chromosomes buffer
-	--M is the size of fitness value buffer
-	port (
+     port (
 	      chromosome	: IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-		fitness		: OUT STD_LOGIC_VECTOR(M-1 DOWNTO 0));
+	      fitness		: OUT STD_LOGIC_VECTOR(M-1 DOWNTO 0));
      end component;
 
 --  signals for definyng the finite state machine
@@ -250,8 +248,7 @@ begin
 	PORT MAP(CLK=>CLK,RST=>RST,D=>sig_mut_ind_two ,Q=>sig_mut_ind_two_stored);
 
 	evaluator_inst : evaluator
-     	generic MAP(N => N, M => M)  
-	   port map (
+     	port map (
 	      chromosome  =>  ev_chromosome,
 	      fitness	  => ev_chromosome_fitness);
 

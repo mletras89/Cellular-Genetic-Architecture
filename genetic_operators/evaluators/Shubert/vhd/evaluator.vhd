@@ -31,9 +31,8 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
 ENTITY evaluator IS
-  PORT( In1                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
-        In2                               :   IN    std_logic_vector(15 DOWNTO 0);  -- sfix16_En12
-        Out1                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix32_En20
+  PORT( chromosome                               :   IN    std_logic_vector(31 DOWNTO 0);  -- sfix16_En12
+        fitness                              :   OUT   std_logic_vector(15 DOWNTO 0)  -- sfix32_En20
         );
 END evaluator;
 
@@ -69,12 +68,12 @@ ARCHITECTURE rtl OF evaluator IS
   SIGNAL sout                     : std_logic_vector(31 DOWNTO 0);  -- sfix32_En20
 BEGIN
   u_Subsystem : Subsystem
-    PORT MAP( In1 => In1,  -- sfix16_En12
+    PORT MAP( In1 => chromosome(15 downto 0),  -- sfix16_En12
               Out1 => Subsystem_out1  -- sfix16_En10
               );
 
   u_Subsystem1 : Subsystem1
-    PORT MAP( In1 => In2,  -- sfix16_En12
+    PORT MAP( In1 => chromosome(31 downto 16),  -- sfix16_En12
               Out1 => Subsystem1_out1  -- sfix16_En10
               );
 
@@ -86,7 +85,7 @@ BEGIN
 
   sout <= std_logic_vector(Product_out1);
 
-  out1 <= sout(15 downto 0);
+  fitness <= sout(15 downto 0);
 
 END rtl;
 
