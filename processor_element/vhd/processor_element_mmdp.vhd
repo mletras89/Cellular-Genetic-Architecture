@@ -53,15 +53,12 @@ ENTITY processor_element_mmdp IS
         south       : IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
         west        : IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
         east        : IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
-        front       : IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
-        back        : IN  STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
 
         Onorth      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
         Osouth      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
         Owest       : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
-        Oeast       : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
-        Ofront      : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);         
-        Oback       : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)
+        Oeast       : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+        current     : OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0)         
         );
 END processor_element_mmdp;
 
@@ -192,6 +189,9 @@ SIGNAL output_best_fit_ops        : STD_LOGIC_VECTOR(M-1 DOWNTO 0);
 
 signal DONE_OPS   : std_logic;
 signal VALID_OPS : std_logic;
+
+signal dB   : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+signal dF   : STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 BEGIN
 
         -- component register_bank_temporal 
@@ -205,7 +205,7 @@ BEGIN
         GENERIC MAP(individuals=>individuals, N =>N, LDS => LDS, i      => i,   j => j, DIM => DIM,INC_ARRAY =>INC_ARRAY)
         PORT MAP(clk => clk, we => we1, en=> en1, ep => ep, addr=>output_counter_n,
                                 di => systolic_stored_value,ip  => parallel_bus, da => output_current_chromosome, dN =>Onorth,
-                                dS => Osouth, dE => OEast, dW => OWest, dB => OBack, dF =>OFront);
+                                dS => Osouth, dE => OEast, dW => OWest, dB => dB, dF =>dF);
 
         -- component register_bank_temporal_fitness
         component_register_bank_temporal_fitness: register_bank_temporal_fitness
@@ -227,7 +227,7 @@ BEGIN
         GENERIC MAP(N => N, M => M, resolution => resolution)
         PORT MAP(
                  CLK => CLK, RST => RST, DONE => DONE_OPS, VALID => VALID_OPS, north => north, south => south,
-                 west => west, east => east, front => front, back => back, c => output_current_chromosome,random_number => systolic_stored_value,
+                 west => west, east => east, front => dF, back => dB, c => output_current_chromosome,random_number => systolic_stored_value,
                  best_individual => best_individual,best_fitness => best_fitness);
 
 
@@ -432,5 +432,7 @@ BEGIN
             END CASE;
           END IF;
         END PROCESS;
+
+current <= output_current_chromosome;
 
 END;

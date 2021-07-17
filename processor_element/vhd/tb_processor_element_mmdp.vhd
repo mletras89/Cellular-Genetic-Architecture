@@ -24,14 +24,11 @@ signal north       :  STD_LOGIC_VECTOR(63 DOWNTO 0);
 signal south       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 signal west        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 signal east        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-signal front       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-signal back        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 signal Onorth      :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 signal Osouth      :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 signal Owest       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-signal Oeast       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-signal Ofront      :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-signal Oback       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
+signal Oeast       :  STD_LOGIC_VECTOR(63 DOWNTO 0);        
+signal current     :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 
  -- declare record type
     type test_vector is record
@@ -39,19 +36,17 @@ signal Oback       :  STD_LOGIC_VECTOR(63 DOWNTO 0);
 	  south       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 	  west        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
 	  east        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-	  front       :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
-	  back        :  STD_LOGIC_VECTOR(63 DOWNTO 0);         
     end record;
 
     type test_vector_array is array (natural range <>) of test_vector;
 
 constant test_vectors : test_vector_array := (
         -- north, south, west, east, front, back 
-        (x"0123456711111111", x"a123456722222222", x"aaaaaaaa33333333",x"bbbbbbbb44444444",x"cccccccc55555555",x"dddddddd66666666"),
-        (x"aaaaaabb11111111", x"b123456722222222", x"baaaaaaa33333333",x"cbbbbbbb44444444",x"dccccccc55555555",x"eddddddd66666666"),
-        (x"0000000711111111", x"c123456722222222", x"caaaaaaa33333333",x"dbbbbbbb44444444",x"eccccccc55555555",x"fddddddd66666666"),
-        (x"0123456711111111", x"d123456722222222", x"daaaaaaa33333333",x"ebbbbbbb44444444",x"fccccccc55555555",x"1ddddddd66666666"),
-        (x"1111111711111111", x"e123456722222222", x"eaaaaaaa33333333",x"fbbbbbbb44444444",x"0ccccccc55555555",x"2ddddddd66666666")
+        (x"0123456711111111", x"a123456722222222", x"aaaaaaaa33333333",x"bbbbbbbb44444444"),
+        (x"aaaaaabb11111111", x"b123456722222222", x"baaaaaaa33333333",x"cbbbbbbb44444444"),
+        (x"0000000711111111", x"c123456722222222", x"caaaaaaa33333333",x"dbbbbbbb44444444"),
+        (x"0123456711111111", x"d123456722222222", x"daaaaaaa33333333",x"ebbbbbbb44444444"),
+        (x"1111111711111111", x"e123456722222222", x"eaaaaaaa33333333",x"fbbbbbbb44444444")
         );
 
 begin
@@ -70,14 +65,11 @@ begin
 	          south    =>  south, 
 	          west     =>  west, 
 	          east     =>  east, 
-	          front    =>  front, 
-	          back     =>  back, 
 	          Onorth   =>  Onorth,    
 	          Osouth   =>  Osouth,
 	          Owest    =>  Owest,
 	          Oeast    =>  Oeast,
-	          Ofront   =>  Ofront,
-	          Oback    =>  Oback);
+                  current  => current);
 
     -- Main simulation process.
     process is
@@ -98,8 +90,6 @@ begin
             south    <= test_vectors(i).south;  
             west     <= test_vectors(i).west;  
             east     <= test_vectors(i).east;             
-            front    <= test_vectors(i).front;  
-            back     <= test_vectors(i).back;             
             in_sys   <= x"FFFFAAAAFFFFAAAA";
 	       wait for 20 ns;
  
