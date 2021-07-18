@@ -29,7 +29,7 @@ read_vhdl ./genetic_operators/evaluators/Griewank/vhd/Rastrigin_pkg.vhd
 read_vhdl ./rng/vhd/rng_xoshiro128plusplus_64bits.vhdl
 read_vhdl ./rng/vhd/rng_xoshiro128plusplus.vhdl
 #reading top
-read_vhdl ./vhd/top_module_cont.vhd
+read_vhdl ./vhd/top_module_cont8x8.vhd
 
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
 
@@ -39,8 +39,8 @@ launch_runs synth_1 -jobs 8
 wait_on_run synth_1
 
 # including sim sources
-add_files -fileset sim_1 -norecurse ./vhd/tb_top_module_cont.vhd
-set_property top tb_top_module_cont [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse ./vhd/tb_top_module_cont8x8.vhd
+set_property top tb_top_module_cont8x8 [get_filesets sim_1]
 
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 launch_simulation

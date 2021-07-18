@@ -29,18 +29,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top_module_mmdp is
-	generic(N  : POSITIVE:=64;  M  : POSITIVE :=16;    resolucion : POSITIVE :=6; individuos: POSITIVE:=16; 
+entity top_module_mmdp8x8 is
+	generic(N  : POSITIVE:=64;  M  : POSITIVE :=16;    resolucion : POSITIVE :=6; individuos: POSITIVE:=1; 
 	        LDS: POSITIVE:=4;   LDF: POSITIVE :=4;     FIT: POSITIVE:=9;           GEN: POSITIVE :=400; 
-		DIM: POSITIVE :=2;  INC_ARRAY : POSITIVE:=4);
+		DIM: POSITIVE :=8;  INC_ARRAY : POSITIVE:=4);
 	port(
 	      clk       			: in  std_logic;   -- reloj general
 	      start_ev       			: in  std_logic;   -- reloj general
 	      rst      			: in  std_logic;  -- reset general
 	      salida1    			: OUT  STD_LOGIC_VECTOR(N-1 DOWNTO 0));
-end top_module_mmdp;
+end top_module_mmdp8x8;
 
-architecture Behavioral of top_module_mmdp is
+architecture Behavioral of top_module_mmdp8x8 is
 
 component processor_element_mmdp IS
 
@@ -118,8 +118,6 @@ begin
         	out_valid => open,
         	out_data  => sist_A(0,0));
         
-
-        
         inst_rng_2: rng_xoshiro128plusplus_64bits
     	generic map (
             init_seed1 => x"0ff3456789abcdef3141592653589793",
@@ -130,7 +128,73 @@ begin
         	out_ready => start_ev,
         	out_valid => open,
         	out_data  => sist_A(0,1));
+
+        inst_rng_3 : rng_xoshiro128plusplus_64bits
+    	generic map(
+            init_seed1 => x"0123456789abcdef3141592653589793",
+            init_seed2 => x"0123456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,2));
+
+        inst_rng_4 : rng_xoshiro128plusplus_64bits
+    	generic map(
+            init_seed1 => x"0123456789abcdef3141592653589793",
+            init_seed2 => x"0123456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,3));
         
+        inst_rng_5: rng_xoshiro128plusplus_64bits
+    	generic map (
+            init_seed1 => x"0ff3456789abcdef3141592653589793",
+            init_seed2 => x"0233456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,4));
+        
+        inst_rng_06 : rng_xoshiro128plusplus_64bits
+    	generic map(
+            init_seed1 => x"0123456789abcdef3141592653589793",
+            init_seed2 => x"0123456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,5));
+        
+        inst_rng_7: rng_xoshiro128plusplus_64bits
+    	generic map (
+            init_seed1 => x"0ff3456789abcdef3141592653589793",
+            init_seed2 => x"0233456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,6));
+        
+        inst_rng_8: rng_xoshiro128plusplus_64bits
+    	generic map (
+            init_seed1 => x"0ff3456789abcdef3141592653589793",
+            init_seed2 => x"0233456789abcdef3141592653589793")
+    	port map(
+        	clk       => clk, 
+        	rst       => rst,
+        	out_ready => start_ev,
+        	out_valid => open,
+        	out_data  => sist_A(0,7));
+       
           
 	g1: for i in 0 to DIM-1 generate
 	begin
@@ -157,8 +221,15 @@ begin
 		end generate;
 	end generate;
 				
-     
-salida1 <= cromos(0,0) and cromos(0,1) and cromos(1,0) and cromos(1,1);
+salida1 <= cromos(0,0) and cromos(0,1) and cromos(0,2) and cromos(0,3) and cromos(0,4) and cromos(0,5) and cromos(0,6) and cromos(0,7) and 
+           cromos(1,0) and cromos(1,1) and cromos(1,2) and cromos(1,3) and cromos(1,4) and cromos(1,5) and cromos(1,6) and cromos(1,7) and
+           cromos(2,0) and cromos(2,1) and cromos(2,2) and cromos(2,3) and cromos(2,4) and cromos(2,5) and cromos(2,6) and cromos(2,7) and
+           cromos(3,0) and cromos(3,1) and cromos(3,2) and cromos(3,3) and cromos(3,4) and cromos(3,5) and cromos(3,6) and cromos(3,7) and
+           cromos(4,0) and cromos(4,1) and cromos(4,2) and cromos(4,3) and cromos(4,4) and cromos(4,5) and cromos(4,6) and cromos(4,7) and
+           cromos(5,0) and cromos(5,1) and cromos(5,2) and cromos(5,3) and cromos(5,4) and cromos(5,5) and cromos(5,6) and cromos(5,7) and
+           cromos(6,0) and cromos(6,1) and cromos(6,2) and cromos(6,3) and cromos(6,4) and cromos(6,5) and cromos(6,6) and cromos(6,7) and
+           cromos(7,0) and cromos(7,1) and cromos(7,2) and cromos(7,3) and cromos(7,4) and cromos(7,5) and cromos(7,6) and cromos(7,7);    
+
 
 end Behavioral;
 

@@ -29,18 +29,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top_module_mmdp is
-	generic(N  : POSITIVE:=64;  M  : POSITIVE :=16;    resolucion : POSITIVE :=6; individuos: POSITIVE:=16; 
+entity top_module_mmdp4x4 is
+	generic(N  : POSITIVE:=64;  M  : POSITIVE :=16;    resolucion : POSITIVE :=6; individuos: POSITIVE:=4; 
 	        LDS: POSITIVE:=4;   LDF: POSITIVE :=4;     FIT: POSITIVE:=9;           GEN: POSITIVE :=400; 
-		DIM: POSITIVE :=2;  INC_ARRAY : POSITIVE:=4);
+		DIM: POSITIVE :=4;  INC_ARRAY : POSITIVE:=4);
 	port(
 	      clk       			: in  std_logic;   -- reloj general
 	      start_ev       			: in  std_logic;   -- reloj general
 	      rst      			: in  std_logic;  -- reset general
 	      salida1    			: OUT  STD_LOGIC_VECTOR(N-1 DOWNTO 0));
-end top_module_mmdp;
+end top_module_mmdp4x4;
 
-architecture Behavioral of top_module_mmdp is
+architecture Behavioral of top_module_mmdp4x4 is
 
 component processor_element_mmdp IS
 
@@ -117,9 +117,7 @@ begin
         	out_ready => start_ev,
         	out_valid => open,
         	out_data  => sist_A(0,0));
-        
-
-        
+      
         inst_rng_2: rng_xoshiro128plusplus_64bits
     	generic map (
             init_seed1 => x"0ff3456789abcdef3141592653589793",
@@ -130,7 +128,29 @@ begin
         	out_ready => start_ev,
         	out_valid => open,
         	out_data  => sist_A(0,1));
+
+        inst_rng_03 : rng_xoshiro128plusplus_64bits
+        generic map(
+            init_seed1 => x"0123456789abcdef3141592653589792",
+            init_seed2 => x"0123456789abcdef3141592653589792")
+        port map(
+                clk       => clk, 
+                rst       => rst,
+                out_ready => start_ev,
+                out_valid => open,
+                out_data  => sist_A(0,2));
         
+       
+        inst_rng_4: rng_xoshiro128plusplus_64bits
+        generic map (
+            init_seed1 => x"0ff3456789abcdef3141592653589794",
+            init_seed2 => x"0233456789abcdef3141592653589794")
+        port map(
+                clk       => clk, 
+                rst       => rst,
+                out_ready => start_ev,
+                out_valid => open,
+                out_data  => sist_A(0,3));       
           
 	g1: for i in 0 to DIM-1 generate
 	begin
@@ -157,8 +177,8 @@ begin
 		end generate;
 	end generate;
 				
-     
-salida1 <= cromos(0,0) and cromos(0,1) and cromos(1,0) and cromos(1,1);
+salida1 <= cromos(0,0) and cromos(0,1) and cromos(0,2) and cromos(0,3) and cromos(1,0) and cromos(1,1) and cromos(1,2) and cromos(1,3) and cromos(2,0) and cromos(2,1) and cromos(2,2) and cromos(2,3) and cromos(3,0) and cromos(3,1) and cromos(3,2) and cromos(3,3);    
+
 
 end Behavioral;
 
