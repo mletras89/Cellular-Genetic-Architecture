@@ -27,4 +27,7 @@ Problem | Chromosome length (*k*) | Fitness length (*l*) | Input domain
 rastrigin | 32 | 16| [-5.12,5.12]
 griewank | 32 | 16| [-600,600]
 shubert | 32 | 16| [-10,10]
+isopeaks | 32 | 16 | --
+mmdp | 64 | 16 | --
+maxones | 32 | 16 | --
 
