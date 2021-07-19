@@ -22,12 +22,12 @@ The PE bidimensional array can be customized by the number of columns and rows a
 
 We employed the next testbench composed of three combinatorial and three continuous fitness functions. For combinatorial problems the chromosomes are encoded as binary bit strings. For continuos problems, the chromosomes are enconded as fixed point format.
 
-Problem | Chromosome length (*k*) | Fitness length (*l*) | Input domain
------------- | -------------|-----|-------|
-rastrigin | 32 | 16| [-5.12,5.12]
-griewank | 32 | 16| [-600,600]
-shubert | 32 | 16| [-10,10]
-isopeaks | 32 | 16 | --
-mmdp | 64 | 16 | --
-maxones | 32 | 16 | --
+Problem | Type |Chromosome length (*k*) | Fitness length (*l*) | Input domain
+------------ | ---|----------|-----|-------|
+rastrigin | continuous|32 | [-5.12,5.12]
+griewank | continuous|32 |16| [-600,600]
+shubert | continuous|32 |16| [-10,10]
+isopeaks | combinatorial|32 |  16 | --
+mmdp | combinatorial|64 | 16 | --
+maxones | combinatorial|32 | 16 | --
 
