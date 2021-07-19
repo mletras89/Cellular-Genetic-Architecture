@@ -9,3 +9,6 @@ The presented hardware architecture explores the idea of multidimensional cellul
 The proposed hardware architecture emulates a 3D population using a bidimensional set of specialized Processor Elements (PEs). Each PE evolves a sub-population by performing selection, crossover and mutation operators.
 
 ## Architecture Overview
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
