@@ -35,7 +35,8 @@ maxones | combinatorial|32 | 16 | --
 
 For synthesis, we explored three different configurations of PE array: 2x2, 4x4 and 8x8 processor elements.
 
-*Xilinx Vivado 2016.4* is recommended to synthesis. A Makefile for synthesis is provided. Each target is composed by the name of the problem and the configuration of the PE array.
+*Xilinx Vivado 2016.4* is recommended to synthesis. A Makefile for synthesis is provided. Each target is composed by the name of the problem and the configuration of the PE array. Before running any target, run in a bash console *module load vivado/2016.4*.
 
 **E.g., make rastrigin2x2** will generate a processor element array of 2x2 (4 processor elements), and the fitness function to evaluate will be the rastrigin. 
 
+At the moment, the Makefile only works in Linux, in future releases there will be a compatible Makefile for Windows.
