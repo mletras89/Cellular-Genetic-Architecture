@@ -10,5 +10,5 @@ The proposed hardware architecture emulates a 3D population using a bidimensiona
 
 ## Architecture Overview
 
-![GitHub Logo](arch.png)
-Format: ![Alt Text](url)
+![Architecture overview](arch.png)
+
