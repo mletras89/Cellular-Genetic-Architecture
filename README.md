@@ -17,3 +17,9 @@ On left there is a column of Pseudo-random number generators (PNRGs) required by
 
 On the right, the set of PEs interconnected. Each PE shares its chromosome with its neighbors. Chromosome and fitness value are encondes as binary bit strings of length *k* and *l*.
 The PE bidimensional array can be customized by the number of columns and rows as well as the number of individuals in the sub-population.
+
+## Testbench
+
+We employed the next testbench composed of three combinatorial and three continuous fitness functions. For combinatorial problems the chromosomes are encoded as binary bit strings. For continuos problems, the chromosomes are enconded as fixed point format.
+
+
