@@ -4,12 +4,13 @@ In many application domains, optimization problems are approached under real-tim
 
 The presented hardware architecture explores the idea of multidimensional cellular genetic algorithms presented in:
 
-[1] Alicia Morales-Reyes, Hugo Jair Escalante, Martin Letras, and Rene Cumplido. 2015. **An Empirical Analysis on Dimensionality in Cellular Genetic Algorithms**. *In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15)*. Association for Computing Machinery, New York, NY, USA, 895–902. DOI:https://doi.org/10.1145/2739480.2754699
+[1] Alicia Morales-Reyes, Hugo Jair Escalante, Martin Letras, and Rene Cumplido. 2015. **An Empirical Analysis on Dimensionality in Cellular Genetic Algorithms**. *In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15)*. Association for Computing Machinery, New York, NY, USA, 895–902. (DOI:https://doi.org/10.1145/2739480.2754699)
 
 The proposed hardware architecture emulates a 3D population using a bidimensional set of specialized Processor Elements (PEs). Each PE evolves a sub-population by performing selection, crossover and mutation operators.
 
 ## Architecture Overview
-The porposed architecture consist of a set or PEs interconnected in a toroidal fashion. Each PE can communicate with a neighborhood composed of PEs located at the north, south, west, and east.
+The porposed architecture consist of a set of PEs interconnected in a toroidal fashion. Each PE can communicate with a neighborhood composed of PEs located at the north, south, west, and east.
 
 ![Architecture overview](arch.png)
 
+On left there is a column of Pseudo-random number generators (PNRGs) required by the genetic operators. E.g., anisotropic selection requieres an alpha parameter for its selection criteria. The PRNGs implements the *Xoroshiro128+* algorithm, for further details refer to: (https://github.com/jorisvr/vhdl_prng).
