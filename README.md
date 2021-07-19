@@ -24,7 +24,7 @@ We employed the next testbench composed of three combinatorial and three continu
 
 Problem | Type |Chromosome length (*k*) | Fitness length (*l*) | Input domain
 ------------ | ---|----------|-----|-------|
-rastrigin | continuous|32 | [-5.12,5.12]
+rastrigin | continuous|32 |16| [-5.12,5.12]
 griewank | continuous|32 |16| [-600,600]
 shubert | continuous|32 |16| [-10,10]
 isopeaks | combinatorial|32 |  16 | --
