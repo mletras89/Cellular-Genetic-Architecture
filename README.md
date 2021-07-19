@@ -22,4 +22,7 @@ The PE bidimensional array can be customized by the number of columns and rows a
 
 We employed the next testbench composed of three combinatorial and three continuous fitness functions. For combinatorial problems the chromosomes are encoded as binary bit strings. For continuos problems, the chromosomes are enconded as fixed point format.
 
-
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
