@@ -4,4 +4,4 @@ In many application domains, optimization problems are approached under real-tim
 
 The presented hardware architecture explores the idea of multidimensional cellular genetic algorithms presented in:
 
-[1] Alicia Morales-Reyes, Hugo Jair Escalante, Martin Letras, and Rene Cumplido. 2015. An Empirical Analysis on Dimensionality in Cellular Genetic Algorithms. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15). Association for Computing Machinery, New York, NY, USA, 895–902. DOI:https://doi.org/10.1145/2739480.2754699
+[1] Alicia Morales-Reyes, Hugo Jair Escalante, Martin Letras, and Rene Cumplido. 2015. *An Empirical Analysis on Dimensionality in Cellular Genetic Algorithms*. In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15). Association for Computing Machinery, New York, NY, USA, 895–902. DOI:https://doi.org/10.1145/2739480.2754699
