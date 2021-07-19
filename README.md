@@ -1,1 +1,1 @@
-# submission-applied-inteligence
+# Cellular Genetic Algorithm
