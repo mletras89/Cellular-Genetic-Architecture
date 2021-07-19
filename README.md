@@ -34,3 +34,8 @@ maxones | combinatorial|32 | 16 | --
 ## Synthesis
 
 For synthesis, we explored three different configurations of PE array: 2x2, 4x4 and 8x8 processor elements.
+
+*Xilinx Vivado 2016.4* is recommended to synthesis. A Makefile for synthesis is provided. Each target is composed by the name of the problem and the configuration of the PE array.
+
+**E.g., make rastrigin2x2** will generate a processor element array of 2x2 (4 processor elements), and the fitness function to evaluate will be the rastrigin. 
+
