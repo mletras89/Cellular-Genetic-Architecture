@@ -7,3 +7,5 @@ The presented hardware architecture explores the idea of multidimensional cellul
 [1] Alicia Morales-Reyes, Hugo Jair Escalante, Martin Letras, and Rene Cumplido. 2015. **An Empirical Analysis on Dimensionality in Cellular Genetic Algorithms**. *In Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation (GECCO '15)*. Association for Computing Machinery, New York, NY, USA, 895–902. DOI:https://doi.org/10.1145/2739480.2754699
 
 The proposed hardware architecture emulates a 3D population using a bidimensional set of specialized Processor Elements (PEs). Each PE evolves a sub-population by performing selection, crossover and mutation operators.
+
+## Architecture Overview
