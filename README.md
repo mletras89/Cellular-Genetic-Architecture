@@ -31,3 +31,6 @@ isopeaks | combinatorial|32 |  16 | --
 mmdp | combinatorial|64 | 16 | --
 maxones | combinatorial|32 | 16 | --
 
+## Synthesis
+
+For synthesis, we explored three different configurations of PE array: 2x2, 4x4 and 8x8 processor elements.
