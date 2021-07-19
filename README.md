@@ -1,1 +1,3 @@
 # Hardware Architecture for a 3D Cellular Genetic Algorithm
+
+In many application domains, optimization problems are approached under real-time constraints. Thus, both high algorithmic and processing performance is necessary. Cellular Genetic Algorithms (cGAs) have shown competitive performance when tackling difficult single objective combinatorial and continuousdomain problems. Morover, it has been demonstrated that structural properties in cGAs, such as population topology dimension, local neighborhood configurationand ad-hoc selection mechanisms, allow not only further algorithmic improvementbut also, these characteristics can be combined at hardware level for acceleration.
