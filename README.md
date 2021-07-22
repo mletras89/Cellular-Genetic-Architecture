@@ -13,7 +13,7 @@ The porposed architecture consist of a set of PEs interconnected in a toroidal f
 
 ![Architecture overview](arch.png)
 
-On left there is a column of Pseudo-random number generators (PNRGs) required by the genetic operators. E.g., anisotropic selection requieres an random alpha value for its selection criteria. The PRNGs implements the *Xoroshiro128+* algorithm, for further details refer to: (https://github.com/jorisvr/vhdl_prng).
+On left there is a column of Pseudo-random number generators (PNRGs) required by the genetic operators. E.g., anisotropic selection requieres a random alpha value for its selection criteria. The PRNGs implements the *Xoroshiro128+* algorithm, for further details refer to: (https://github.com/jorisvr/vhdl_prng).
 
 On the right, the set of PEs interconnected. Each PE shares its chromosome with its neighbors. Chromosome and fitness value are encondes as binary bit strings of length *k* and *l*.
 The PE bidimensional array can be customized by the number of columns and rows as well as the number of individuals in the sub-population.
