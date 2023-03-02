@@ -1,0 +1,293 @@
+Cellular Genetic Algorithm!
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+847[ms]
+847[ms]
+848[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+847[ms]
+848[ms]
+847[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+849[ms]
+849[ms]
+849[ms]
+848[ms]
+848[ms]
+848[ms]
+848[ms]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
+Individual(0, 0, 0)
+Fitness -> 32
+Chromosome [ 11111111111111111111111111111111]
