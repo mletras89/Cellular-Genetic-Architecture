@@ -10,11 +10,19 @@
 
 // Use (void) to silence unused warnings.
 #define assertm(exp, msg) assert(((void)msg, exp))
-
-const int N_COLS  = 2;
-const int N_ROWS  = 2;
-const int N_DEPTH = 16;
 const int C_SIZE  = 64;
+// inds 64
+//const int N_COLS  = 2;
+//const int N_ROWS  = 2;
+//const int N_DEPTH = 16;
+// inds 128
+const int N_COLS  = 4;
+const int N_ROWS  = 4;
+const int N_DEPTH = 8;
+// inds 256
+//const int N_COLS  = 8;
+//const int N_ROWS  = 8;
+//const int N_DEPTH = 4;
 
 const int GENS  = 1000;
 
@@ -199,6 +207,14 @@ void cGA(){
 
 
 int main() {
+
+  int generations = GENS;
+  if(const char* env_p = std::getenv("GENS")){
+       std::string s = env_p;
+       generations = stoi(s);
+  }
+  std::cout << "Number of Generations: " << generations << '\n';
+
   std::cout << "Cellular Genetic Algorithm!"<<std::endl;
   for(int x = 0; x < 100; x++){
   // initialize the population
@@ -212,7 +228,7 @@ int main() {
   }
 
   std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
-  for(int x=0; x < GENS ; x++){
+  for(int x=0; x < generations ; x++){
     cGA();
     // dumping results from temporal to current
     for(int i=0;i < N_ROWS;i++ ){
