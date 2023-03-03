@@ -37,24 +37,12 @@ bool is2D = false;
   }
 
   __device__ int evaluate(int* chromosome,int offset){
-// ------------------------------
-// X    00    01    10    11
-//-------------------------------
-//Iso1  m     0     0     m-a
-//Iso2  0     0     0     m
-//-------------------------------
-    int fitness = 0;
-    if (chromosome[offset] == 1 && chromosome[offset+1] == 1)
-      fitness += 2;
-    for(int i=2; i< 16 ;i++){
-      if(chromosome[offset+2*i-1]==0 && chromosome[offset+2*i-2]==0)
-        fitness+= 2;
-      else if(chromosome[offset+2*i-1]==1 && chromosome[offset+2*i-2]==1)
-        fitness += 1;
+   int fitness = 0;
+    for(int i=0; i<C_SIZE; i++){
+      fitness += chromosome[offset+i];
     }
     return fitness;
   }
-
 
 __device__ int generateSelection(curandState* globalState, int ind)
 {

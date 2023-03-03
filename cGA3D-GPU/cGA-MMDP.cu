@@ -14,7 +14,7 @@
 #include <curand_kernel.h>
 
 #define assertm(exp, msg) assert(((void)msg, exp))
-const int C_SIZE  = 32;
+const int C_SIZE  = 64;
 
 // inds 64
 int N_COLS  = 2;
@@ -36,25 +36,25 @@ bool is2D = false;
       }
   }
 
+
   __device__ int evaluate(int* chromosome,int offset){
-// ------------------------------
-// X    00    01    10    11
-//-------------------------------
-//Iso1  m     0     0     m-a
-//Iso2  0     0     0     m
-//-------------------------------
     int fitness = 0;
-    if (chromosome[offset] == 1 && chromosome[offset+1] == 1)
-      fitness += 2;
-    for(int i=2; i< 16 ;i++){
-      if(chromosome[offset+2*i-1]==0 && chromosome[offset+2*i-2]==0)
-        fitness+= 2;
-      else if(chromosome[offset+2*i-1]==1 && chromosome[offset+2*i-2]==1)
-        fitness += 1;
+    for (int i=0; i <10; i++){
+      int counter = 0;
+      if (chromosome[offset+(6*(i-1)+(i+1))] == 1)
+        counter++;
+
+    if (counter ==0 || counter == 6)
+      fitness += 16;
+
+    if (counter ==2 || counter == 4)
+            fitness += 6;
+
+    if (counter ==3)
+            fitness += 10;
     }
     return fitness;
   }
-
 
 __device__ int generateSelection(curandState* globalState, int ind)
 {
