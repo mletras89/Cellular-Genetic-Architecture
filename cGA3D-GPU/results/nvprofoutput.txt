@@ -1,0 +1,1513 @@
+=18610== NVPROF is profiling process 18610, command: ./shubert
+==18610== Profiling application: ./shubert
+==18610== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   96.24%  130.76ms      1000  130.76us  129.38us  134.14us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    2.73%  3.7047ms      2000  1.8520us     960ns  2.7840us  [CUDA memcpy DtoH]
+                    0.99%  1.3430ms      2000     671ns     447ns     896ns  [CUDA memcpy HtoD]
+                    0.04%  56.927us         1  56.927us  56.927us  56.927us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   57.60%  160.74ms      4000  40.184us  2.5070us  151.68us  cudaMemcpy
+                   37.85%  105.63ms         5  21.126ms  1.4800us  105.62ms  cudaMalloc
+                    3.44%  9.5958ms         1  9.5958ms  9.5958ms  9.5958ms  cuLibraryLoadData
+                    1.05%  2.9381ms      1001  2.9350us  2.7470us  19.432us  cudaLaunchKernel
+                    0.05%  135.19us       114  1.1850us     162ns  52.981us  cuDeviceGetAttribute
+                    0.00%  11.497us         4  2.8740us  2.1570us  4.5960us  cudaFree
+                    0.00%  10.723us         1  10.723us  10.723us  10.723us  cuDeviceGetName
+                    0.00%  6.0030us         1  6.0030us  6.0030us  6.0030us  cuDeviceGetPCIBusId
+                    0.00%  1.8380us         3     612ns     214ns  1.3970us  cuDeviceGetCount
+                    0.00%     968ns         2     484ns     182ns     786ns  cuDeviceGet
+                    0.00%     545ns         1     545ns     545ns     545ns  cuDeviceTotalMem
+                    0.00%     460ns         1     460ns     460ns     460ns  cuModuleGetLoadingMode
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetUuid
+==18625== NVPROF is profiling process 18625, command: ./shubert
+==18625== Profiling application: ./shubert
+==18625== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.84%  484.85ms      5000  96.969us  90.463us  120.64us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.17%  16.028ms     10000  1.6020us     736ns  12.000us  [CUDA memcpy DtoH]
+                    0.98%  4.9714ms     10000     497ns     319ns     801ns  [CUDA memcpy HtoD]
+                    0.01%  52.287us         1  52.287us  52.287us  52.287us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   85.32%  614.80ms     20000  30.739us  2.4950us  321.23us  cudaMemcpy
+                   11.45%  82.498ms         5  16.500ms  1.5900us  82.489ms  cudaMalloc
+                    2.07%  14.894ms      5001  2.9780us  2.7480us  267.24us  cudaLaunchKernel
+                    1.14%  8.2162ms         1  8.2162ms  8.2162ms  8.2162ms  cuLibraryLoadData
+                    0.02%  111.11us       114     974ns     135ns  44.275us  cuDeviceGetAttribute
+                    0.00%  15.821us         4  3.9550us  2.4800us  7.0890us  cudaFree
+                    0.00%  9.4860us         1  9.4860us  9.4860us  9.4860us  cuDeviceGetName
+                    0.00%  3.9810us         1  3.9810us  3.9810us  3.9810us  cuDeviceGetPCIBusId
+                    0.00%  1.3340us         3     444ns     179ns     927ns  cuDeviceGetCount
+                    0.00%     690ns         2     345ns     168ns     522ns  cuDeviceGet
+                    0.00%     345ns         1     345ns     345ns     345ns  cuDeviceTotalMem
+                    0.00%     272ns         1     272ns     272ns     272ns  cuModuleGetLoadingMode
+                    0.00%     253ns         1     253ns     253ns     253ns  cuDeviceGetUuid
+==18640== NVPROF is profiling process 18640, command: ./shubert
+==18640== Profiling application: ./shubert
+==18640== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.71%  917.23ms     10000  91.723us  90.464us  93.824us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  31.605ms     20000  1.5800us     896ns  12.480us  [CUDA memcpy DtoH]
+                    0.98%  9.4230ms     20000     471ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.00%  41.600us         1  41.600us  41.600us  41.600us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   89.08%  1.16474s     40000  29.118us  2.4780us  326.03us  cudaMemcpy
+                    7.44%  97.321ms         5  19.464ms  1.6520us  97.312ms  cudaMalloc
+                    2.47%  32.247ms     10001  3.2240us  2.9510us  231.35us  cudaLaunchKernel
+                    0.99%  12.979ms         1  12.979ms  12.979ms  12.979ms  cuLibraryLoadData
+                    0.02%  232.24us       114  2.0370us     287ns  89.706us  cuDeviceGetAttribute
+                    0.00%  19.346us         1  19.346us  19.346us  19.346us  cuDeviceGetName
+                    0.00%  17.592us         4  4.3980us  2.7510us  8.5710us  cudaFree
+                    0.00%  9.3800us         1  9.3800us  9.3800us  9.3800us  cuDeviceGetPCIBusId
+                    0.00%  3.3100us         3  1.1030us     429ns  2.3750us  cuDeviceGetCount
+                    0.00%  1.4870us         2     743ns     316ns  1.1710us  cuDeviceGet
+                    0.00%     683ns         1     683ns     683ns     683ns  cuDeviceTotalMem
+                    0.00%     657ns         1     657ns     657ns     657ns  cuModuleGetLoadingMode
+                    0.00%     571ns         1     571ns     571ns     571ns  cuDeviceGetUuid
+==18655== NVPROF is profiling process 18655, command: ./shubert
+==18655== Profiling application: ./shubert
+==18655== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.68%  1.83451s     20000  91.725us  90.463us  93.631us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.34%  63.955ms     40000  1.5980us     736ns  14.112us  [CUDA memcpy DtoH]
+                    0.98%  18.853ms     40000     471ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.00%  40.607us         1  40.607us  40.607us  40.607us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   93.44%  2.33251s     80000  29.156us  2.3020us  323.10us  cudaMemcpy
+                    3.59%  89.643ms         5  17.929ms  1.5710us  89.634ms  cudaMalloc
+                    2.62%  65.352ms     20001  3.2670us  2.9980us  228.46us  cudaLaunchKernel
+                    0.35%  8.6379ms         1  8.6379ms  8.6379ms  8.6379ms  cuLibraryLoadData
+                    0.00%  121.13us       114  1.0620us     145ns  47.868us  cuDeviceGetAttribute
+                    0.00%  17.194us         4  4.2980us  2.6530us  7.8640us  cudaFree
+                    0.00%  10.503us         1  10.503us  10.503us  10.503us  cuDeviceGetName
+                    0.00%  4.4730us         1  4.4730us  4.4730us  4.4730us  cuDeviceGetPCIBusId
+                    0.00%  1.4690us         3     489ns     202ns  1.0390us  cuDeviceGetCount
+                    0.00%     655ns         2     327ns     129ns     526ns  cuDeviceGet
+                    0.00%     386ns         1     386ns     386ns     386ns  cuDeviceTotalMem
+                    0.00%     292ns         1     292ns     292ns     292ns  cuModuleGetLoadingMode
+                    0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
+==18670== NVPROF is profiling process 18670, command: ./shubert
+==18670== Profiling application: ./shubert
+==18670== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.69%  93.498ms      1000  93.497us  91.711us  95.839us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  3.2258ms      2000  1.6120us     736ns  2.1120us  [CUDA memcpy DtoH]
+                    0.96%  940.16us      2000     470ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.04%  42.176us         1  42.176us  42.176us  42.176us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   55.16%  123.64ms      4000  30.910us  2.5130us  125.20us  cudaMemcpy
+                   39.59%  88.744ms         5  17.749ms  1.6810us  88.735ms  cudaMalloc
+                    3.85%  8.6362ms         1  8.6362ms  8.6362ms  8.6362ms  cuLibraryLoadData
+                    1.33%  2.9747ms      1001  2.9710us  2.8220us  19.680us  cudaLaunchKernel
+                    0.05%  122.88us       114  1.0770us     145ns  47.326us  cuDeviceGetAttribute
+                    0.01%  11.887us         4  2.9710us  2.1490us  5.0050us  cudaFree
+                    0.00%  10.566us         1  10.566us  10.566us  10.566us  cuDeviceGetName
+                    0.00%  4.8550us         1  4.8550us  4.8550us  4.8550us  cuDeviceGetPCIBusId
+                    0.00%  2.2370us         3     745ns     254ns  1.7280us  cuDeviceGetCount
+                    0.00%     789ns         2     394ns     153ns     636ns  cuDeviceGet
+                    0.00%     367ns         1     367ns     367ns     367ns  cuDeviceTotalMem
+                    0.00%     354ns         1     354ns     354ns     354ns  cuModuleGetLoadingMode
+                    0.00%     278ns         1     278ns     278ns     278ns  cuDeviceGetUuid
+==18685== NVPROF is profiling process 18685, command: ./shubert
+==18685== Profiling application: ./shubert
+==18685== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.70%  468.15ms      5000  93.629us  91.775us  95.871us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.33%  16.297ms     10000  1.6290us     895ns  12.353us  [CUDA memcpy DtoH]
+                    0.96%  4.6974ms     10000     469ns     319ns  1.6000us  [CUDA memcpy HtoD]
+                    0.01%  42.560us         1  42.560us  42.560us  42.560us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   87.11%  620.33ms     20000  31.016us  2.5310us  330.08us  cudaMemcpy
+                    9.89%  70.395ms         5  14.079ms  1.6490us  70.386ms  cudaMalloc
+                    2.08%  14.803ms      5001  2.9590us  2.7280us  230.84us  cudaLaunchKernel
+                    0.91%  6.4832ms         1  6.4832ms  6.4832ms  6.4832ms  cuLibraryLoadData
+                    0.01%  95.623us       114     838ns      90ns  33.379us  cuDeviceGetAttribute
+                    0.00%  16.607us         4  4.1510us  2.5300us  7.5130us  cudaFree
+                    0.00%  7.6620us         1  7.6620us  7.6620us  7.6620us  cuDeviceGetName
+                    0.00%  3.5920us         1  3.5920us  3.5920us  3.5920us  cuDeviceGetPCIBusId
+                    0.00%     722ns         3     240ns     115ns     467ns  cuDeviceGetCount
+                    0.00%     512ns         2     256ns      97ns     415ns  cuDeviceGet
+                    0.00%     258ns         1     258ns     258ns     258ns  cuModuleGetLoadingMode
+                    0.00%     223ns         1     223ns     223ns     223ns  cuDeviceTotalMem
+                    0.00%     149ns         1     149ns     149ns     149ns  cuDeviceGetUuid
+==18700== NVPROF is profiling process 18700, command: ./shubert
+==18700== Profiling application: ./shubert
+==18700== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.71%  936.72ms     10000  93.671us  91.679us  95.839us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.32%  32.498ms     20000  1.6240us     735ns  14.272us  [CUDA memcpy DtoH]
+                    0.96%  9.4054ms     20000     470ns     319ns  1.4400us  [CUDA memcpy HtoD]
+                    0.00%  41.568us         1  41.568us  41.568us  41.568us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   92.13%  1.23642s     40000  30.910us  2.0710us  328.78us  cudaMemcpy
+                    5.16%  69.228ms         5  13.846ms  1.6750us  69.219ms  cudaMalloc
+                    2.28%  30.630ms     10001  3.0620us  2.8100us  232.65us  cudaLaunchKernel
+                    0.42%  5.5746ms         1  5.5746ms  5.5746ms  5.5746ms  cuLibraryLoadData
+                    0.01%  79.212us       114     694ns      87ns  31.649us  cuDeviceGetAttribute
+                    0.00%  19.852us         1  19.852us  19.852us  19.852us  cuDeviceGetName
+                    0.00%  17.080us         4  4.2700us  2.6080us  8.2190us  cudaFree
+                    0.00%  3.8070us         1  3.8070us  3.8070us  3.8070us  cuDeviceGetPCIBusId
+                    0.00%     888ns         3     296ns     137ns     608ns  cuDeviceGetCount
+                    0.00%     406ns         2     203ns      96ns     310ns  cuDeviceGet
+                    0.00%     244ns         1     244ns     244ns     244ns  cuDeviceTotalMem
+                    0.00%     181ns         1     181ns     181ns     181ns  cuModuleGetLoadingMode
+                    0.00%     160ns         1     160ns     160ns     160ns  cuDeviceGetUuid
+==18715== NVPROF is profiling process 18715, command: ./shubert
+==18715== Profiling application: ./shubert
+==18715== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.69%  1.88917s     20000  94.458us  92.448us  96.671us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.35%  66.072ms     40000  1.6510us     736ns  16.800us  [CUDA memcpy DtoH]
+                    0.96%  18.994ms     40000     474ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.00%  43.168us         1  43.168us  43.168us  43.168us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   93.57%  2.49543s     80000  31.192us  2.2200us  369.46us  cudaMemcpy
+                    3.68%  98.074ms         5  19.615ms  1.7290us  98.065ms  cudaMalloc
+                    2.27%  60.452ms     20001  3.0220us  2.7460us  229.83us  cudaLaunchKernel
+                    0.48%  12.684ms         1  12.684ms  12.684ms  12.684ms  cuLibraryLoadData
+                    0.01%  215.31us       114  1.8880us     278ns  83.645us  cuDeviceGetAttribute
+                    0.00%  18.013us         1  18.013us  18.013us  18.013us  cuDeviceGetName
+                    0.00%  17.519us         4  4.3790us  2.7040us  8.1350us  cudaFree
+                    0.00%  12.052us         1  12.052us  12.052us  12.052us  cuDeviceGetPCIBusId
+                    0.00%  2.9690us         3     989ns     438ns  2.0910us  cuDeviceGetCount
+                    0.00%  1.3370us         2     668ns     276ns  1.0610us  cuDeviceGet
+                    0.00%     998ns         1     998ns     998ns     998ns  cuDeviceTotalMem
+                    0.00%     734ns         1     734ns     734ns     734ns  cuModuleGetLoadingMode
+                    0.00%     559ns         1     559ns     559ns     559ns  cuDeviceGetUuid
+==18730== NVPROF is profiling process 18730, command: ./shubert
+==18730== Profiling application: ./shubert
+==18730== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.61%  93.633ms      1000  93.633us  92.575us  95.647us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.37%  3.2977ms      2000  1.6480us     896ns  9.1840us  [CUDA memcpy DtoH]
+                    0.97%  949.09us      2000     474ns     319ns     640ns  [CUDA memcpy HtoD]
+                    0.05%  49.408us         1  49.408us  49.408us  49.408us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   54.05%  124.48ms      4000  31.120us  2.5970us  116.30us  cudaMemcpy
+                   38.01%  87.539ms         5  17.508ms  1.5930us  87.531ms  cudaMalloc
+                    6.49%  14.946ms         1  14.946ms  14.946ms  14.946ms  cuLibraryLoadData
+                    1.31%  3.0141ms      1001  3.0110us  2.8600us  21.461us  cudaLaunchKernel
+                    0.12%  269.14us       114  2.3600us     333ns  101.44us  cuDeviceGetAttribute
+                    0.01%  23.062us         1  23.062us  23.062us  23.062us  cuDeviceGetName
+                    0.01%  11.863us         4  2.9650us  2.2260us  4.8460us  cudaFree
+                    0.00%  11.067us         1  11.067us  11.067us  11.067us  cuDeviceGetPCIBusId
+                    0.00%  3.0610us         3  1.0200us     478ns  2.0870us  cuDeviceGetCount
+                    0.00%  1.6920us         2     846ns     346ns  1.3460us  cuDeviceGet
+                    0.00%     802ns         1     802ns     802ns     802ns  cuDeviceGetUuid
+                    0.00%     789ns         1     789ns     789ns     789ns  cuDeviceTotalMem
+                    0.00%     723ns         1     723ns     723ns     723ns  cuModuleGetLoadingMode
+==18745== NVPROF is profiling process 18745, command: ./shubert
+==18745== Profiling application: ./shubert
+==18745== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.68%  467.91ms      5000  93.582us  92.383us  95.807us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.34%  16.336ms     10000  1.6330us     896ns  12.512us  [CUDA memcpy DtoH]
+                    0.97%  4.7520ms     10000     475ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.01%  49.536us         1  49.536us  49.536us  49.536us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   82.80%  622.02ms     20000  31.101us  2.5240us  330.18us  cudaMemcpy
+                   13.13%  98.631ms         5  19.726ms  1.7520us  98.621ms  cudaMalloc
+                    2.08%  15.612ms         1  15.612ms  15.612ms  15.612ms  cuLibraryLoadData
+                    1.95%  14.624ms      5001  2.9240us  2.6460us  228.94us  cudaLaunchKernel
+                    0.04%  269.15us       114  2.3610us     356ns  102.83us  cuDeviceGetAttribute
+                    0.00%  23.684us         1  23.684us  23.684us  23.684us  cuDeviceGetName
+                    0.00%  16.134us         4  4.0330us  2.5220us  7.7010us  cudaFree
+                    0.00%  10.912us         1  10.912us  10.912us  10.912us  cuDeviceGetPCIBusId
+                    0.00%  3.0890us         3  1.0290us     474ns  2.0900us  cuDeviceGetCount
+                    0.00%  1.7220us         2     861ns     375ns  1.3470us  cuDeviceGet
+                    0.00%     801ns         1     801ns     801ns     801ns  cuDeviceTotalMem
+                    0.00%     705ns         1     705ns     705ns     705ns  cuModuleGetLoadingMode
+                    0.00%     558ns         1     558ns     558ns     558ns  cuDeviceGetUuid
+==18760== NVPROF is profiling process 18760, command: ./shubert
+==18760== Profiling application: ./shubert
+==18760== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.69%  935.03ms     10000  93.503us  92.319us  95.615us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.33%  32.521ms     20000  1.6260us     896ns  9.9840us  [CUDA memcpy DtoH]
+                    0.97%  9.5014ms     20000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  49.120us         1  49.120us  49.120us  49.120us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   90.73%  1.23976s     40000  30.993us  2.1330us  331.97us  cudaMemcpy
+                    6.41%  87.584ms         5  17.517ms  1.5790us  87.575ms  cudaMalloc
+                    2.28%  31.161ms     10001  3.1150us  2.8290us  228.98us  cudaLaunchKernel
+                    0.57%  7.8455ms         1  7.8455ms  7.8455ms  7.8455ms  cuLibraryLoadData
+                    0.01%  113.75us       114     997ns     129ns  44.320us  cuDeviceGetAttribute
+                    0.00%  16.292us         4  4.0730us  2.5450us  7.6790us  cudaFree
+                    0.00%  9.6360us         1  9.6360us  9.6360us  9.6360us  cuDeviceGetName
+                    0.00%  4.2010us         1  4.2010us  4.2010us  4.2010us  cuDeviceGetPCIBusId
+                    0.00%  1.3880us         3     462ns     199ns     953ns  cuDeviceGetCount
+                    0.00%     647ns         2     323ns     138ns     509ns  cuDeviceGet
+                    0.00%     437ns         1     437ns     437ns     437ns  cuDeviceTotalMem
+                    0.00%     339ns         1     339ns     339ns     339ns  cuModuleGetLoadingMode
+                    0.00%     258ns         1     258ns     258ns     258ns  cuDeviceGetUuid
+==18775== NVPROF is profiling process 18775, command: ./shubert
+==18775== Profiling application: ./shubert
+==18775== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.67%  1.87012s     20000  93.506us  92.319us  95.776us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.35%  65.568ms     40000  1.6390us     896ns  12.960us  [CUDA memcpy DtoH]
+                    0.97%  18.939ms     40000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.00%  49.119us         1  49.119us  49.119us  49.119us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   94.68%  2.48737s     80000  31.092us  2.1650us  365.44us  cudaMemcpy
+                    2.76%  72.580ms         5  14.516ms  1.6840us  72.571ms  cudaMalloc
+                    2.18%  57.235ms     20001  2.8610us  2.5890us  266.94us  cudaLaunchKernel
+                    0.37%  9.6817ms         1  9.6817ms  9.6817ms  9.6817ms  cuLibraryLoadData
+                    0.01%  203.67us       114  1.7860us     255ns  79.531us  cuDeviceGetAttribute
+                    0.00%  17.611us         1  17.611us  17.611us  17.611us  cuDeviceGetName
+                    0.00%  17.117us         4  4.2790us  2.6440us  8.0660us  cudaFree
+                    0.00%  6.7830us         1  6.7830us  6.7830us  6.7830us  cuDeviceGetPCIBusId
+                    0.00%  2.3990us         3     799ns     331ns  1.6830us  cuDeviceGetCount
+                    0.00%  1.2460us         2     623ns     255ns     991ns  cuDeviceGet
+                    0.00%     639ns         1     639ns     639ns     639ns  cuDeviceTotalMem
+                    0.00%     533ns         1     533ns     533ns     533ns  cuModuleGetLoadingMode
+                    0.00%     473ns         1     473ns     473ns     473ns  cuDeviceGetUuid
+==18790== NVPROF is profiling process 18790, command: ./rastrigin
+==18790== Profiling application: ./rastrigin
+==18790== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.72%  96.231ms      1000  96.230us  95.072us  97.568us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.29%  3.3097ms      2000  1.6540us     896ns  12.288us  [CUDA memcpy DtoH]
+                    0.94%  949.66us      2000     474ns     319ns  1.1200us  [CUDA memcpy HtoD]
+                    0.04%  41.504us         1  41.504us  41.504us  41.504us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   60.50%  124.96ms      4000  31.239us  2.5320us  118.06us  cudaMemcpy
+                   34.11%  70.451ms         5  14.090ms  1.6110us  70.442ms  cudaMalloc
+                    3.85%  7.9459ms         1  7.9459ms  7.9459ms  7.9459ms  cuLibraryLoadData
+                    1.48%  3.0490ms      1001  3.0450us  2.8750us  19.555us  cudaLaunchKernel
+                    0.05%  95.408us       114     836ns      85ns  32.816us  cuDeviceGetAttribute
+                    0.01%  12.386us         1  12.386us  12.386us  12.386us  cuDeviceGetPCIBusId
+                    0.01%  11.454us         4  2.8630us  2.2050us  4.4370us  cudaFree
+                    0.00%  7.4740us         1  7.4740us  7.4740us  7.4740us  cuDeviceGetName
+                    0.00%  3.7760us         3  1.2580us     524ns  2.6180us  cuDeviceGetCount
+                    0.00%  2.1240us         2  1.0620us     401ns  1.7230us  cuDeviceGet
+                    0.00%     831ns         1     831ns     831ns     831ns  cuModuleGetLoadingMode
+                    0.00%     251ns         1     251ns     251ns     251ns  cuDeviceTotalMem
+                    0.00%     161ns         1     161ns     161ns     161ns  cuDeviceGetUuid
+==18805== NVPROF is profiling process 18805, command: ./rastrigin
+==18805== Profiling application: ./rastrigin
+==18805== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.75%  481.27ms      5000  96.253us  95.168us  97.888us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.29%  16.550ms     10000  1.6550us     896ns  12.129us  [CUDA memcpy DtoH]
+                    0.95%  4.7538ms     10000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  41.504us         1  41.504us  41.504us  41.504us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   84.70%  624.69ms     20000  31.234us  2.4850us  331.31us  cudaMemcpy
+                   12.05%  88.846ms         5  17.769ms  1.6820us  88.837ms  cudaMalloc
+                    2.02%  14.885ms      5001  2.9760us  2.7400us  231.25us  cudaLaunchKernel
+                    1.21%  8.9214ms         1  8.9214ms  8.9214ms  8.9214ms  cuLibraryLoadData
+                    0.02%  152.66us       114  1.3390us     177ns  60.303us  cuDeviceGetAttribute
+                    0.00%  16.210us         4  4.0520us  2.6000us  7.9470us  cudaFree
+                    0.00%  12.916us         1  12.916us  12.916us  12.916us  cuDeviceGetName
+                    0.00%  7.4800us         1  7.4800us  7.4800us  7.4800us  cuDeviceGetPCIBusId
+                    0.00%  2.2620us         3     754ns     284ns  1.6850us  cuDeviceGetCount
+                    0.00%     979ns         2     489ns     220ns     759ns  cuDeviceGet
+                    0.00%     433ns         1     433ns     433ns     433ns  cuDeviceTotalMem
+                    0.00%     401ns         1     401ns     401ns     401ns  cuModuleGetLoadingMode
+                    0.00%     343ns         1     343ns     343ns     343ns  cuDeviceGetUuid
+==18820== NVPROF is profiling process 18820, command: ./rastrigin
+==18820== Profiling application: ./rastrigin
+==18820== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.76%  963.18ms     10000  96.318us  95.135us  99.231us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.29%  33.099ms     20000  1.6540us     896ns  12.256us  [CUDA memcpy DtoH]
+                    0.95%  9.5111ms     20000     475ns     319ns  1.5360us  [CUDA memcpy HtoD]
+                    0.00%  42.048us         1  42.048us  42.048us  42.048us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   91.44%  1.24886s     40000  31.221us  2.5260us  330.60us  cudaMemcpy
+                    5.44%  74.306ms         5  14.861ms  1.6480us  74.297ms  cudaMalloc
+                    2.27%  31.035ms     10001  3.1030us  2.8310us  229.34us  cudaLaunchKernel
+                    0.82%  11.236ms         1  11.236ms  11.236ms  11.236ms  cuLibraryLoadData
+                    0.02%  245.73us       114  2.1550us     301ns  95.277us  cuDeviceGetAttribute
+                    0.00%  20.275us         1  20.275us  20.275us  20.275us  cuDeviceGetName
+                    0.00%  16.757us         4  4.1890us  2.6960us  8.0270us  cudaFree
+                    0.00%  10.985us         1  10.985us  10.985us  10.985us  cuDeviceGetPCIBusId
+                    0.00%  2.9010us         3     967ns     415ns  1.9950us  cuDeviceGetCount
+                    0.00%  1.5260us         2     763ns     372ns  1.1540us  cuDeviceGet
+                    0.00%     880ns         1     880ns     880ns     880ns  cuDeviceTotalMem
+                    0.00%     700ns         1     700ns     700ns     700ns  cuModuleGetLoadingMode
+                    0.00%     560ns         1     560ns     560ns     560ns  cuDeviceGetUuid
+==18835== NVPROF is profiling process 18835, command: ./rastrigin
+==18835== Profiling application: ./rastrigin
+==18835== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.76%  1.92579s     20000  96.289us  95.039us  97.664us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  66.303ms     40000  1.6570us     736ns  13.440us  [CUDA memcpy DtoH]
+                    0.94%  18.944ms     40000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.00%  42.143us         1  42.143us  42.143us  42.143us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   94.54%  2.49394s     80000  31.174us  2.0810us  331.73us  cudaMemcpy
+                    2.89%  76.336ms         5  15.267ms  1.6680us  76.328ms  cudaMalloc
+                    2.26%  59.684ms     20001  2.9840us  2.6980us  228.37us  cudaLaunchKernel
+                    0.30%  7.7868ms         1  7.7868ms  7.7868ms  7.7868ms  cuLibraryLoadData
+                    0.01%  176.08us       114  1.5440us     220ns  67.302us  cuDeviceGetAttribute
+                    0.00%  15.781us         1  15.781us  15.781us  15.781us  cuDeviceGetName
+                    0.00%  15.606us         4  3.9010us  2.4930us  7.3150us  cudaFree
+                    0.00%  8.6680us         1  8.6680us  8.6680us  8.6680us  cuDeviceGetPCIBusId
+                    0.00%  2.8180us         3     939ns     323ns  2.1470us  cuDeviceGetCount
+                    0.00%  1.0380us         2     519ns     243ns     795ns  cuDeviceGet
+                    0.00%     510ns         1     510ns     510ns     510ns  cuModuleGetLoadingMode
+                    0.00%     464ns         1     464ns     464ns     464ns  cuDeviceTotalMem
+                    0.00%     415ns         1     415ns     415ns     415ns  cuDeviceGetUuid
+==18850== NVPROF is profiling process 18850, command: ./rastrigin
+==18850== Profiling application: ./rastrigin
+==18850== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.80%  98.019ms      1000  98.019us  97.087us  99.903us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.23%  3.3054ms      2000  1.6520us     896ns  7.4880us  [CUDA memcpy DtoH]
+                    0.93%  949.85us      2000     474ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.04%  42.464us         1  42.464us  42.464us  42.464us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   58.34%  125.53ms      4000  31.381us  2.6670us  115.39us  cudaMemcpy
+                   36.85%  79.299ms         5  15.860ms  1.6180us  79.291ms  cudaMalloc
+                    3.32%  7.1492ms         1  7.1492ms  7.1492ms  7.1492ms  cuLibraryLoadData
+                    1.39%  2.9829ms      1001  2.9790us  2.8400us  19.713us  cudaLaunchKernel
+                    0.08%  168.51us       114  1.4780us     200ns  65.107us  cuDeviceGetAttribute
+                    0.01%  14.088us         1  14.088us  14.088us  14.088us  cuDeviceGetName
+                    0.01%  11.443us         4  2.8600us  2.0410us  4.7290us  cudaFree
+                    0.00%  9.6040us         1  9.6040us  9.6040us  9.6040us  cuDeviceGetPCIBusId
+                    0.00%  1.7960us         3     598ns     281ns  1.1720us  cuDeviceGetCount
+                    0.00%  1.1620us         2     581ns     221ns     941ns  cuDeviceGet
+                    0.00%     543ns         1     543ns     543ns     543ns  cuDeviceTotalMem
+                    0.00%     416ns         1     416ns     416ns     416ns  cuModuleGetLoadingMode
+                    0.00%     388ns         1     388ns     388ns     388ns  cuDeviceGetUuid
+==18865== NVPROF is profiling process 18865, command: ./rastrigin
+==18865== Profiling application: ./rastrigin
+==18865== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.82%  490.07ms      5000  98.013us  97.055us  99.839us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.24%  16.585ms     10000  1.6580us     896ns  11.551us  [CUDA memcpy DtoH]
+                    0.93%  4.7508ms     10000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  42.239us         1  42.239us  42.239us  42.239us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   84.89%  624.48ms     20000  31.223us  2.5190us  329.84us  cudaMemcpy
+                   11.52%  84.752ms         5  16.950ms  1.6840us  84.743ms  cudaMalloc
+                    2.07%  15.221ms      5001  3.0430us  2.8130us  229.22us  cudaLaunchKernel
+                    1.49%  10.982ms         1  10.982ms  10.982ms  10.982ms  cuLibraryLoadData
+                    0.02%  175.64us       114  1.5400us     213ns  67.664us  cuDeviceGetAttribute
+                    0.00%  16.019us         1  16.019us  16.019us  16.019us  cuDeviceGetName
+                    0.00%  15.408us         4  3.8520us  2.5850us  7.0770us  cudaFree
+                    0.00%  7.1670us         1  7.1670us  7.1670us  7.1670us  cuDeviceGetPCIBusId
+                    0.00%  2.0650us         3     688ns     356ns  1.2860us  cuDeviceGetCount
+                    0.00%  1.0240us         2     512ns     222ns     802ns  cuDeviceGet
+                    0.00%     519ns         1     519ns     519ns     519ns  cuDeviceTotalMem
+                    0.00%     485ns         1     485ns     485ns     485ns  cuModuleGetLoadingMode
+                    0.00%     387ns         1     387ns     387ns     387ns  cuDeviceGetUuid
+==18880== NVPROF is profiling process 18880, command: ./rastrigin
+==18880== Profiling application: ./rastrigin
+==18880== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.83%  981.04ms     10000  98.104us  97.055us  100.19us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.24%  33.151ms     20000  1.6570us     896ns  15.552us  [CUDA memcpy DtoH]
+                    0.93%  9.4703ms     20000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.00%  43.648us         1  43.648us  43.648us  43.648us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   90.28%  1.24811s     40000  31.202us  2.1670us  334.06us  cudaMemcpy
+                    6.42%  88.704ms         5  17.741ms  1.6810us  88.695ms  cudaMalloc
+                    2.27%  31.360ms     10001  3.1350us  2.8650us  230.95us  cudaLaunchKernel
+                    1.01%  14.011ms         1  14.011ms  14.011ms  14.011ms  cuLibraryLoadData
+                    0.02%  234.14us       114  2.0530us     288ns  88.581us  cuDeviceGetAttribute
+                    0.00%  19.873us         1  19.873us  19.873us  19.873us  cuDeviceGetName
+                    0.00%  16.774us         4  4.1930us  2.6340us  8.2850us  cudaFree
+                    0.00%  13.575us         1  13.575us  13.575us  13.575us  cuDeviceGetPCIBusId
+                    0.00%  2.5070us         3     835ns     360ns  1.7540us  cuDeviceGetCount
+                    0.00%  1.5500us         2     775ns     325ns  1.2250us  cuDeviceGet
+                    0.00%     685ns         1     685ns     685ns     685ns  cuDeviceTotalMem
+                    0.00%     645ns         1     645ns     645ns     645ns  cuModuleGetLoadingMode
+                    0.00%     516ns         1     516ns     516ns     516ns  cuDeviceGetUuid
+==18895== NVPROF is profiling process 18895, command: ./rastrigin
+==18895== Profiling application: ./rastrigin
+==18895== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.84%  1.96323s     20000  98.161us  97.024us  99.615us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.24%  66.336ms     40000  1.6580us     736ns  12.416us  [CUDA memcpy DtoH]
+                    0.92%  18.924ms     40000     473ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.00%  43.263us         1  43.263us  43.263us  43.263us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   93.40%  2.49494s     80000  31.186us  2.1350us  368.14us  cudaMemcpy
+                    3.71%  99.039ms         5  19.808ms  1.7900us  99.029ms  cudaMalloc
+                    2.23%  59.570ms     20001  2.9780us  2.7000us  229.58us  cudaLaunchKernel
+                    0.65%  17.419ms         1  17.419ms  17.419ms  17.419ms  cuLibraryLoadData
+                    0.01%  292.15us       114  2.5620us     371ns  109.03us  cuDeviceGetAttribute
+                    0.00%  24.604us         1  24.604us  24.604us  24.604us  cuDeviceGetName
+                    0.00%  17.063us         4  4.2650us  2.5940us  7.9480us  cudaFree
+                    0.00%  12.829us         1  12.829us  12.829us  12.829us  cuDeviceGetPCIBusId
+                    0.00%  3.4310us         3  1.1430us     607ns  2.1650us  cuDeviceGetCount
+                    0.00%  2.1360us         2  1.0680us     422ns  1.7140us  cuDeviceGet
+                    0.00%     856ns         1     856ns     856ns     856ns  cuDeviceTotalMem
+                    0.00%     806ns         1     806ns     806ns     806ns  cuModuleGetLoadingMode
+                    0.00%     691ns         1     691ns     691ns     691ns  cuDeviceGetUuid
+==18911== NVPROF is profiling process 18911, command: ./rastrigin
+==18911== Profiling application: ./rastrigin
+==18911== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.68%  95.901ms      1000  95.901us  95.327us  96.991us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.32%  3.3270ms      2000  1.6630us     895ns  8.8320us  [CUDA memcpy DtoH]
+                    0.95%  947.80us      2000     473ns     320ns     641ns  [CUDA memcpy HtoD]
+                    0.05%  49.984us         1  49.984us  49.984us  49.984us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   59.41%  125.02ms      4000  31.253us  2.5070us  115.92us  cudaMemcpy
+                   36.19%  76.164ms         5  15.233ms  1.6560us  76.154ms  cudaMalloc
+                    2.95%  6.2120ms         1  6.2120ms  6.2120ms  6.2120ms  cuLibraryLoadData
+                    1.39%  2.9209ms      1001  2.9180us  2.7540us  22.198us  cudaLaunchKernel
+                    0.05%  94.831us       114     831ns      87ns  32.925us  cuDeviceGetAttribute
+                    0.01%  11.264us         4  2.8160us  2.1500us  4.4470us  cudaFree
+                    0.00%  7.8250us         1  7.8250us  7.8250us  7.8250us  cuDeviceGetName
+                    0.00%  4.2670us         1  4.2670us  4.2670us  4.2670us  cuDeviceGetPCIBusId
+                    0.00%     832ns         3     277ns     114ns     597ns  cuDeviceGetCount
+                    0.00%     453ns         2     226ns      91ns     362ns  cuDeviceGet
+                    0.00%     255ns         1     255ns     255ns     255ns  cuDeviceTotalMem
+                    0.00%     226ns         1     226ns     226ns     226ns  cuModuleGetLoadingMode
+                    0.00%     160ns         1     160ns     160ns     160ns  cuDeviceGetUuid
+==18926== NVPROF is profiling process 18926, command: ./rastrigin
+==18926== Profiling application: ./rastrigin
+==18926== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.74%  479.69ms      5000  95.938us  95.295us  97.632us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  16.541ms     10000  1.6540us     896ns  11.903us  [CUDA memcpy DtoH]
+                    0.95%  4.7525ms     10000     475ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.01%  48.864us         1  48.864us  48.864us  48.864us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   87.45%  625.14ms     20000  31.257us  2.4800us  331.86us  cudaMemcpy
+                    9.49%  67.818ms         5  13.564ms  1.6590us  67.809ms  cudaMalloc
+                    2.15%  15.383ms      5001  3.0750us  2.8470us  229.03us  cudaLaunchKernel
+                    0.90%  6.4092ms         1  6.4092ms  6.4092ms  6.4092ms  cuLibraryLoadData
+                    0.01%  80.519us       114     706ns      87ns  32.602us  cuDeviceGetAttribute
+                    0.00%  20.394us         1  20.394us  20.394us  20.394us  cuDeviceGetName
+                    0.00%  15.877us         4  3.9690us  2.7120us  7.1790us  cudaFree
+                    0.00%  12.114us         1  12.114us  12.114us  12.114us  cuDeviceGetPCIBusId
+                    0.00%  1.3470us         3     449ns     137ns  1.0580us  cuDeviceGetCount
+                    0.00%     457ns         2     228ns     101ns     356ns  cuDeviceGet
+                    0.00%     256ns         1     256ns     256ns     256ns  cuDeviceTotalMem
+                    0.00%     194ns         1     194ns     194ns     194ns  cuModuleGetLoadingMode
+                    0.00%     175ns         1     175ns     175ns     175ns  cuDeviceGetUuid
+==18941== NVPROF is profiling process 18941, command: ./rastrigin
+==18941== Profiling application: ./rastrigin
+==18941== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.74%  959.59ms     10000  95.958us  95.263us  97.055us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.31%  33.130ms     20000  1.6560us     896ns  13.536us  [CUDA memcpy DtoH]
+                    0.94%  9.4702ms     20000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  50.336us         1  50.336us  50.336us  50.336us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   91.00%  1.24747s     40000  31.186us  2.4690us  331.30us  cudaMemcpy
+                    6.15%  84.275ms         5  16.855ms  1.5610us  84.266ms  cudaMalloc
+                    2.23%  30.620ms     10001  3.0610us  2.7610us  227.97us  cudaLaunchKernel
+                    0.61%  8.3977ms         1  8.3977ms  8.3977ms  8.3977ms  cuLibraryLoadData
+                    0.01%  124.31us       114  1.0900us     133ns  42.933us  cuDeviceGetAttribute
+                    0.00%  16.869us         4  4.2170us  2.6130us  8.0310us  cudaFree
+                    0.00%  9.6290us         1  9.6290us  9.6290us  9.6290us  cuDeviceGetName
+                    0.00%  4.0490us         1  4.0490us  4.0490us  4.0490us  cuDeviceGetPCIBusId
+                    0.00%  1.2010us         3     400ns     187ns     826ns  cuDeviceGetCount
+                    0.00%     637ns         2     318ns     146ns     491ns  cuDeviceGet
+                    0.00%     356ns         1     356ns     356ns     356ns  cuDeviceTotalMem
+                    0.00%     316ns         1     316ns     316ns     316ns  cuModuleGetLoadingMode
+                    0.00%     288ns         1     288ns     288ns     288ns  cuDeviceGetUuid
+==18956== NVPROF is profiling process 18956, command: ./rastrigin
+==18956== Profiling application: ./rastrigin
+==18956== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.74%  1.91803s     20000  95.901us  95.264us  97.311us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.31%  66.330ms     40000  1.6580us     736ns  14.720us  [CUDA memcpy DtoH]
+                    0.95%  18.948ms     40000     473ns     319ns  1.1520us  [CUDA memcpy HtoD]
+                    0.00%  48.800us         1  48.800us  48.800us  48.800us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   93.60%  2.49477s     80000  31.184us  2.2090us  368.37us  cudaMemcpy
+                    3.45%  91.834ms         5  18.367ms  1.6720us  91.825ms  cudaMalloc
+                    2.30%  61.287ms     20001  3.0640us  2.7760us  231.49us  cudaLaunchKernel
+                    0.64%  17.032ms         1  17.032ms  17.032ms  17.032ms  cuLibraryLoadData
+                    0.01%  294.73us       114  2.5850us     430ns  107.05us  cuDeviceGetAttribute
+                    0.00%  25.409us         1  25.409us  25.409us  25.409us  cuDeviceGetName
+                    0.00%  17.055us         4  4.2630us  2.6220us  8.1130us  cudaFree
+                    0.00%  12.073us         1  12.073us  12.073us  12.073us  cuDeviceGetPCIBusId
+                    0.00%  3.4340us         3  1.1440us     562ns  2.2510us  cuDeviceGetCount
+                    0.00%  2.2600us         2  1.1300us     521ns  1.7390us  cuDeviceGet
+                    0.00%  1.0410us         1  1.0410us  1.0410us  1.0410us  cuDeviceTotalMem
+                    0.00%     824ns         1     824ns     824ns     824ns  cuModuleGetLoadingMode
+                    0.00%     785ns         1     785ns     785ns     785ns  cuDeviceGetUuid
+==18971== NVPROF is profiling process 18971, command: ./griewank
+==18971== Profiling application: ./griewank
+==18971== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.66%  94.394ms      1000  94.393us  92.959us  96.512us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.34%  3.2946ms      2000  1.6470us     896ns  9.6320us  [CUDA memcpy DtoH]
+                    0.96%  949.91us      2000     474ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.04%  41.151us         1  41.151us  41.151us  41.151us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   56.33%  124.80ms      4000  31.200us  2.5690us  109.87us  cudaMemcpy
+                   37.87%  83.904ms         5  16.781ms  1.6700us  83.895ms  cudaMalloc
+                    4.29%  9.5113ms         1  9.5113ms  9.5113ms  9.5113ms  cuLibraryLoadData
+                    1.45%  3.2018ms      1001  3.1980us  3.0080us  23.558us  cudaLaunchKernel
+                    0.05%  114.36us       114  1.0030us     136ns  44.705us  cuDeviceGetAttribute
+                    0.01%  11.856us         4  2.9640us  2.2800us  4.5740us  cudaFree
+                    0.00%  9.6940us         1  9.6940us  9.6940us  9.6940us  cuDeviceGetName
+                    0.00%  4.3600us         1  4.3600us  4.3600us  4.3600us  cuDeviceGetPCIBusId
+                    0.00%  1.3290us         3     443ns     225ns     871ns  cuDeviceGetCount
+                    0.00%     709ns         2     354ns     164ns     545ns  cuDeviceGet
+                    0.00%     359ns         1     359ns     359ns     359ns  cuDeviceTotalMem
+                    0.00%     330ns         1     330ns     330ns     330ns  cuModuleGetLoadingMode
+                    0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
+==18986== NVPROF is profiling process 18986, command: ./griewank
+==18986== Profiling application: ./griewank
+==18986== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.67%  471.91ms      5000  94.381us  92.575us  96.512us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.36%  16.571ms     10000  1.6570us     768ns  12.320us  [CUDA memcpy DtoH]
+                    0.96%  4.7355ms     10000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  41.855us         1  41.855us  41.855us  41.855us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.93%  623.71ms     20000  31.185us  2.4670us  330.83us  cudaMemcpy
+                   12.77%  94.932ms         5  18.986ms  1.6780us  94.923ms  cudaMalloc
+                    2.07%  15.360ms      5001  3.0710us  2.7790us  227.04us  cudaLaunchKernel
+                    1.20%  8.9438ms         1  8.9438ms  8.9438ms  8.9438ms  cuLibraryLoadData
+                    0.02%  143.61us       114  1.2590us     162ns  57.015us  cuDeviceGetAttribute
+                    0.00%  15.280us         4  3.8200us  2.5810us  6.7420us  cudaFree
+                    0.00%  11.115us         1  11.115us  11.115us  11.115us  cuDeviceGetName
+                    0.00%  4.3470us         1  4.3470us  4.3470us  4.3470us  cuDeviceGetPCIBusId
+                    0.00%  2.2130us         3     737ns     214ns  1.7610us  cuDeviceGetCount
+                    0.00%     803ns         2     401ns     196ns     607ns  cuDeviceGet
+                    0.00%     518ns         1     518ns     518ns     518ns  cuDeviceTotalMem
+                    0.00%     378ns         1     378ns     378ns     378ns  cuModuleGetLoadingMode
+                    0.00%     307ns         1     307ns     307ns     307ns  cuDeviceGetUuid
+==19001== NVPROF is profiling process 19001, command: ./griewank
+==19001== Profiling application: ./griewank
+==19001== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.68%  943.76ms     10000  94.375us  92.063us  96.447us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.36%  33.137ms     20000  1.6560us     736ns  11.712us  [CUDA memcpy DtoH]
+                    0.96%  9.4767ms     20000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.00%  43.007us         1  43.007us  43.007us  43.007us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   91.17%  1.24659s     40000  31.164us  2.4530us  333.02us  cudaMemcpy
+                    5.97%  81.667ms         5  16.333ms  1.5710us  81.659ms  cudaMalloc
+                    2.26%  30.945ms     10001  3.0940us  2.8220us  231.66us  cudaLaunchKernel
+                    0.58%  7.9895ms         1  7.9895ms  7.9895ms  7.9895ms  cuLibraryLoadData
+                    0.01%  110.10us       114     965ns     131ns  44.350us  cuDeviceGetAttribute
+                    0.00%  16.523us         4  4.1300us  2.6470us  7.8380us  cudaFree
+                    0.00%  9.7190us         1  9.7190us  9.7190us  9.7190us  cuDeviceGetName
+                    0.00%  4.5280us         1  4.5280us  4.5280us  4.5280us  cuDeviceGetPCIBusId
+                    0.00%  1.1900us         3     396ns     206ns     776ns  cuDeviceGetCount
+                    0.00%     652ns         2     326ns     161ns     491ns  cuDeviceGet
+                    0.00%     334ns         1     334ns     334ns     334ns  cuDeviceTotalMem
+                    0.00%     256ns         1     256ns     256ns     256ns  cuModuleGetLoadingMode
+                    0.00%     252ns         1     252ns     252ns     252ns  cuDeviceGetUuid
+==19016== NVPROF is profiling process 19016, command: ./griewank
+==19016== Profiling application: ./griewank
+==19016== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.68%  1.88854s     20000  94.426us  91.967us  96.511us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.35%  66.158ms     40000  1.6530us     895ns  13.312us  [CUDA memcpy DtoH]
+                    0.96%  19.015ms     40000     475ns     319ns  1.6000us  [CUDA memcpy HtoD]
+                    0.00%  41.792us         1  41.792us  41.792us  41.792us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   94.43%  2.49875s     80000  31.234us  2.1930us  331.87us  cudaMemcpy
+                    2.97%  78.673ms         5  15.735ms  1.6410us  78.665ms  cudaMalloc
+                    2.28%  60.273ms     20001  3.0130us  2.7360us  230.03us  cudaLaunchKernel
+                    0.31%  8.1904ms         1  8.1904ms  8.1904ms  8.1904ms  cuLibraryLoadData
+                    0.00%  112.56us       114     987ns     136ns  44.741us  cuDeviceGetAttribute
+                    0.00%  17.720us         4  4.4300us  2.7030us  8.4690us  cudaFree
+                    0.00%  9.5950us         1  9.5950us  9.5950us  9.5950us  cuDeviceGetName
+                    0.00%  4.0380us         1  4.0380us  4.0380us  4.0380us  cuDeviceGetPCIBusId
+                    0.00%  1.1210us         3     373ns     176ns     730ns  cuDeviceGetCount
+                    0.00%     716ns         2     358ns     147ns     569ns  cuDeviceGet
+                    0.00%     332ns         1     332ns     332ns     332ns  cuDeviceTotalMem
+                    0.00%     297ns         1     297ns     297ns     297ns  cuModuleGetLoadingMode
+                    0.00%     261ns         1     261ns     261ns     261ns  cuDeviceGetUuid
+==19031== NVPROF is profiling process 19031, command: ./griewank
+==19031== Profiling application: ./griewank
+==19031== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.72%  96.127ms      1000  96.127us  93.632us  98.720us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.29%  3.2998ms      2000  1.6490us     928ns  2.1120us  [CUDA memcpy DtoH]
+                    0.95%  950.40us      2000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.04%  43.552us         1  43.552us  43.552us  43.552us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   57.21%  125.39ms      4000  31.346us  2.6730us  114.19us  cudaMemcpy
+                   37.38%  81.918ms         5  16.384ms  1.7770us  81.909ms  cudaMalloc
+                    3.96%  8.6811ms         1  8.6811ms  8.6811ms  8.6811ms  cuLibraryLoadData
+                    1.38%  3.0259ms      1001  3.0220us  2.8520us  19.265us  cudaLaunchKernel
+                    0.06%  131.92us       114  1.1570us     137ns  59.995us  cuDeviceGetAttribute
+                    0.01%  11.915us         4  2.9780us  2.2880us  4.7490us  cudaFree
+                    0.00%  9.7750us         1  9.7750us  9.7750us  9.7750us  cuDeviceGetName
+                    0.00%  4.6030us         1  4.6030us  4.6030us  4.6030us  cuDeviceGetPCIBusId
+                    0.00%  1.4160us         3     472ns     175ns  1.0240us  cuDeviceGetCount
+                    0.00%     705ns         2     352ns     137ns     568ns  cuDeviceGet
+                    0.00%     337ns         1     337ns     337ns     337ns  cuDeviceTotalMem
+                    0.00%     321ns         1     321ns     321ns     321ns  cuModuleGetLoadingMode
+                    0.00%     256ns         1     256ns     256ns     256ns  cuDeviceGetUuid
+==19046== NVPROF is profiling process 19046, command: ./griewank
+==19046== Profiling application: ./griewank
+==19046== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.74%  480.41ms      5000  96.081us  93.087us  98.528us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.31%  16.606ms     10000  1.6600us     896ns  12.736us  [CUDA memcpy DtoH]
+                    0.94%  4.7384ms     10000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.01%  43.264us         1  43.264us  43.264us  43.264us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.80%  624.31ms     20000  31.215us  2.4790us  330.78us  cudaMemcpy
+                   12.05%  89.800ms         5  17.960ms  1.5860us  89.791ms  cudaMalloc
+                    2.10%  15.662ms         1  15.662ms  15.662ms  15.662ms  cuLibraryLoadData
+                    2.00%  14.926ms      5001  2.9840us  2.7300us  229.18us  cudaLaunchKernel
+                    0.04%  266.89us       114  2.3410us     330ns  101.62us  cuDeviceGetAttribute
+                    0.00%  23.743us         1  23.743us  23.743us  23.743us  cuDeviceGetName
+                    0.00%  14.678us         4  3.6690us  2.2470us  6.5200us  cudaFree
+                    0.00%  11.787us         1  11.787us  11.787us  11.787us  cuDeviceGetPCIBusId
+                    0.00%  3.2320us         3  1.0770us     478ns  2.1740us  cuDeviceGetCount
+                    0.00%  1.7850us         2     892ns     361ns  1.4240us  cuDeviceGet
+                    0.00%     815ns         1     815ns     815ns     815ns  cuModuleGetLoadingMode
+                    0.00%     781ns         1     781ns     781ns     781ns  cuDeviceTotalMem
+                    0.00%     628ns         1     628ns     628ns     628ns  cuDeviceGetUuid
+==19061== NVPROF is profiling process 19061, command: ./griewank
+==19061== Profiling application: ./griewank
+==19061== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.75%  961.32ms     10000  96.131us  92.992us  98.815us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  33.179ms     20000  1.6580us     768ns  12.000us  [CUDA memcpy DtoH]
+                    0.94%  9.4738ms     20000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.00%  43.520us         1  43.520us  43.520us  43.520us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   90.65%  1.24896s     40000  31.224us  2.0340us  330.45us  cudaMemcpy
+                    6.33%  87.253ms         5  17.451ms  1.4530us  87.245ms  cudaMalloc
+                    2.30%  31.692ms     10001  3.1680us  2.8650us  268.38us  cudaLaunchKernel
+                    0.70%  9.6525ms         1  9.6525ms  9.6525ms  9.6525ms  cuLibraryLoadData
+                    0.01%  141.68us       114  1.2420us     164ns  56.665us  cuDeviceGetAttribute
+                    0.00%  16.274us         4  4.0680us  2.4990us  7.4690us  cudaFree
+                    0.00%  11.350us         1  11.350us  11.350us  11.350us  cuDeviceGetName
+                    0.00%  4.2190us         1  4.2190us  4.2190us  4.2190us  cuDeviceGetPCIBusId
+                    0.00%  1.7100us         3     570ns     234ns  1.2240us  cuDeviceGetCount
+                    0.00%     898ns         2     449ns     188ns     710ns  cuDeviceGet
+                    0.00%     655ns         1     655ns     655ns     655ns  cuDeviceTotalMem
+                    0.00%     449ns         1     449ns     449ns     449ns  cuModuleGetLoadingMode
+                    0.00%     286ns         1     286ns     286ns     286ns  cuDeviceGetUuid
+==19076== NVPROF is profiling process 19076, command: ./griewank
+==19076== Profiling application: ./griewank
+==19076== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.75%  1.92193s     20000  96.096us  93.152us  98.911us  KernelCGA(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.30%  66.213ms     40000  1.6550us     896ns  12.064us  [CUDA memcpy DtoH]
+                    0.95%  19.014ms     40000     475ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.00%  42.207us         1  42.207us  42.207us  42.207us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   94.43%  2.50128s     80000  31.266us  2.2190us  334.01us  cudaMemcpy
+                    3.02%  79.934ms         5  15.987ms  1.6520us  79.925ms  cudaMalloc
+                    2.32%  61.433ms     20001  3.0710us  2.7710us  233.57us  cudaLaunchKernel
+                    0.22%  5.9146ms         1  5.9146ms  5.9146ms  5.9146ms  cuLibraryLoadData
+                    0.01%  208.51us       114  1.8290us      90ns  114.24us  cuDeviceGetAttribute
+                    0.00%  25.364us         1  25.364us  25.364us  25.364us  cuDeviceGetName
+                    0.00%  16.662us         4  4.1650us  2.6600us  8.0340us  cudaFree
+                    0.00%  12.524us         1  12.524us  12.524us  12.524us  cuDeviceGetPCIBusId
+                    0.00%  4.4370us         3  1.4790us     586ns  3.1880us  cuDeviceGetCount
+                    0.00%  2.1950us         2  1.0970us     399ns  1.7960us  cuDeviceGet
+                    0.00%     844ns         1     844ns     844ns     844ns  cuDeviceTotalMem
+                    0.00%     800ns         1     800ns     800ns     800ns  cuModuleGetLoadingMode
+                    0.00%     148ns         1     148ns     148ns     148ns  cuDeviceGetUuid
+==19091== NVPROF is profiling process 19091, command: ./griewank
+==19091== Profiling application: ./griewank
+==19091== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.65%  95.494ms      1000  95.494us  93.759us  98.240us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.35%  3.3429ms      2000  1.6710us     896ns  12.001us  [CUDA memcpy DtoH]
+                    0.95%  949.69us      2000     474ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.05%  49.247us         1  49.247us  49.247us  49.247us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   54.96%  125.03ms      4000  31.258us  2.5840us  119.66us  cudaMemcpy
+                   39.89%  90.741ms         5  18.148ms  1.6100us  90.732ms  cudaMalloc
+                    3.77%  8.5829ms         1  8.5829ms  8.5829ms  8.5829ms  cuLibraryLoadData
+                    1.31%  2.9905ms      1001  2.9870us  2.8030us  23.757us  cudaLaunchKernel
+                    0.05%  112.26us       114     984ns     136ns  43.998us  cuDeviceGetAttribute
+                    0.01%  11.920us         4  2.9800us  2.2450us  4.6540us  cudaFree
+                    0.00%  9.9110us         1  9.9110us  9.9110us  9.9110us  cuDeviceGetName
+                    0.00%  3.9860us         1  3.9860us  3.9860us  3.9860us  cuDeviceGetPCIBusId
+                    0.00%  1.4160us         3     472ns     215ns     965ns  cuDeviceGetCount
+                    0.00%     635ns         2     317ns     137ns     498ns  cuDeviceGet
+                    0.00%     356ns         1     356ns     356ns     356ns  cuDeviceTotalMem
+                    0.00%     285ns         1     285ns     285ns     285ns  cuModuleGetLoadingMode
+                    0.00%     257ns         1     257ns     257ns     257ns  cuDeviceGetUuid
+==19106== NVPROF is profiling process 19106, command: ./griewank
+==19106== Profiling application: ./griewank
+==19106== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.72%  477.30ms      5000  95.459us  93.663us  98.271us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.31%  16.521ms     10000  1.6520us     895ns  9.3760us  [CUDA memcpy DtoH]
+                    0.95%  4.7532ms     10000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.01%  49.504us         1  49.504us  49.504us  49.504us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   84.39%  625.20ms     20000  31.260us  2.5550us  333.47us  cudaMemcpy
+                   12.06%  89.345ms         5  17.869ms  1.6020us  89.335ms  cudaMalloc
+                    1.99%  14.779ms      5001  2.9550us  2.7100us  231.25us  cudaLaunchKernel
+                    1.52%  11.292ms         1  11.292ms  11.292ms  11.292ms  cuLibraryLoadData
+                    0.03%  206.44us       114  1.8100us     238ns  85.135us  cuDeviceGetAttribute
+                    0.00%  17.359us         1  17.359us  17.359us  17.359us  cuDeviceGetName
+                    0.00%  15.837us         4  3.9590us  2.5170us  7.1190us  cudaFree
+                    0.00%  8.1250us         1  8.1250us  8.1250us  8.1250us  cuDeviceGetPCIBusId
+                    0.00%  2.2650us         3     755ns     350ns  1.5280us  cuDeviceGetCount
+                    0.00%  1.2740us         2     637ns     236ns  1.0380us  cuDeviceGet
+                    0.00%     621ns         1     621ns     621ns     621ns  cuModuleGetLoadingMode
+                    0.00%     562ns         1     562ns     562ns     562ns  cuDeviceTotalMem
+                    0.00%     439ns         1     439ns     439ns     439ns  cuDeviceGetUuid
+==19121== NVPROF is profiling process 19121, command: ./griewank
+==19121== Profiling application: ./griewank
+==19121== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.71%  954.41ms     10000  95.440us  93.312us  98.271us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.33%  33.256ms     20000  1.6620us     896ns  11.648us  [CUDA memcpy DtoH]
+                    0.95%  9.4755ms     20000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.00%  49.536us         1  49.536us  49.536us  49.536us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   90.25%  1.24834s     40000  31.208us  2.5490us  332.28us  cudaMemcpy
+                    6.51%  90.096ms         5  18.019ms  1.5680us  90.087ms  cudaMalloc
+                    2.13%  29.420ms     10001  2.9410us  2.6630us  240.58us  cudaLaunchKernel
+                    1.09%  15.077ms         1  15.077ms  15.077ms  15.077ms  cuLibraryLoadData
+                    0.02%  267.20us       114  2.3430us     340ns  100.38us  cuDeviceGetAttribute
+                    0.00%  22.770us         1  22.770us  22.770us  22.770us  cuDeviceGetName
+                    0.00%  16.494us         4  4.1230us  2.5650us  7.8640us  cudaFree
+                    0.00%  10.681us         1  10.681us  10.681us  10.681us  cuDeviceGetPCIBusId
+                    0.00%  4.1220us         3  1.3740us     483ns  3.1110us  cuDeviceGetCount
+                    0.00%  1.7950us         2     897ns     365ns  1.4300us  cuDeviceGet
+                    0.00%     795ns         1     795ns     795ns     795ns  cuDeviceTotalMem
+                    0.00%     729ns         1     729ns     729ns     729ns  cuModuleGetLoadingMode
+                    0.00%     669ns         1     669ns     669ns     669ns  cuDeviceGetUuid
+==19136== NVPROF is profiling process 19136, command: ./griewank
+==19136== Profiling application: ./griewank
+==19136== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   95.72%  1.90868s     20000  95.434us  93.535us  98.335us  KernelCGA2D(int*, float*, int*, float*, curandStateXORWOW*, int, int)
+                    3.33%  66.437ms     40000  1.6600us     736ns  12.672us  [CUDA memcpy DtoH]
+                    0.95%  18.931ms     40000     473ns     319ns  1.5690us  [CUDA memcpy HtoD]
+                    0.00%  49.088us         1  49.088us  49.088us  49.088us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   94.32%  2.49499s     80000  31.187us  2.1420us  334.40us  cudaMemcpy
+                    2.97%  78.504ms         5  15.701ms  1.7010us  78.494ms  cudaMalloc
+                    2.40%  63.409ms     20001  3.1700us  2.8380us  232.46us  cudaLaunchKernel
+                    0.31%  8.3006ms         1  8.3006ms  8.3006ms  8.3006ms  cuLibraryLoadData
+                    0.00%  112.53us       114     987ns     132ns  43.708us  cuDeviceGetAttribute
+                    0.00%  17.803us         4  4.4500us  2.7860us  8.4610us  cudaFree
+                    0.00%  9.9410us         1  9.9410us  9.9410us  9.9410us  cuDeviceGetName
+                    0.00%  4.1960us         1  4.1960us  4.1960us  4.1960us  cuDeviceGetPCIBusId
+                    0.00%  1.7560us         3     585ns     181ns  1.3850us  cuDeviceGetCount
+                    0.00%     684ns         2     342ns     129ns     555ns  cuDeviceGet
+                    0.00%     359ns         1     359ns     359ns     359ns  cuDeviceTotalMem
+                    0.00%     315ns         1     315ns     315ns     315ns  cuModuleGetLoadingMode
+                    0.00%     267ns         1     267ns     267ns     267ns  cuDeviceGetUuid
+==19153== NVPROF is profiling process 19153, command: ./cGA-IsoPeaks
+==19153== Profiling application: ./cGA-IsoPeaks
+==19153== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.20%  8.0433ms      1000  8.0430us  7.6160us  9.1200us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.79%  3.3050ms      2000  1.6520us     896ns  2.1120us  [CUDA memcpy DtoH]
+                    7.68%  947.20us      2000     473ns     319ns  1.2480us  [CUDA memcpy HtoD]
+                    0.34%  41.407us         1  41.407us  41.407us  41.407us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   61.19%  71.790ms         5  14.358ms  1.5930us  71.781ms  cudaMalloc
+                   29.60%  34.722ms      4000  8.6800us  2.5540us  25.330us  cudaMemcpy
+                    6.33%  7.4254ms         1  7.4254ms  7.4254ms  7.4254ms  cuLibraryLoadData
+                    2.62%  3.0792ms      1001  3.0760us  2.9250us  20.673us  cudaLaunchKernel
+                    0.21%  248.45us       114  2.1790us     309ns  94.466us  cuDeviceGetAttribute
+                    0.02%  21.384us         1  21.384us  21.384us  21.384us  cuDeviceGetName
+                    0.01%  11.981us         4  2.9950us  2.2630us  4.8930us  cudaFree
+                    0.01%  10.792us         1  10.792us  10.792us  10.792us  cuDeviceGetPCIBusId
+                    0.00%  3.0750us         3  1.0250us     431ns  2.0850us  cuDeviceGetCount
+                    0.00%  1.6220us         2     811ns     326ns  1.2960us  cuDeviceGet
+                    0.00%     815ns         1     815ns     815ns     815ns  cuDeviceTotalMem
+                    0.00%     789ns         1     789ns     789ns     789ns  cuModuleGetLoadingMode
+                    0.00%     622ns         1     622ns     622ns     622ns  cuDeviceGetUuid
+==19168== NVPROF is profiling process 19168, command: ./cGA-IsoPeaks
+==19168== Profiling application: ./cGA-IsoPeaks
+==19168== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.17%  40.057ms      5000  8.0110us  7.4240us  9.1200us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.03%  16.616ms     10000  1.6610us     896ns  17.088us  [CUDA memcpy DtoH]
+                    7.73%  4.7516ms     10000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.07%  40.544us         1  40.544us  40.544us  40.544us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   63.90%  175.26ms     20000  8.7630us  2.5660us  240.83us  cudaMemcpy
+                   28.28%  77.561ms         5  15.512ms  1.7400us  77.551ms  cudaMalloc
+                    5.62%  15.402ms      5001  3.0790us  2.8290us  228.24us  cudaLaunchKernel
+                    2.16%  5.9370ms         1  5.9370ms  5.9370ms  5.9370ms  cuLibraryLoadData
+                    0.03%  94.631us       114     830ns      87ns  32.146us  cuDeviceGetAttribute
+                    0.01%  14.831us         4  3.7070us  2.5730us  6.5680us  cudaFree
+                    0.00%  7.3120us         1  7.3120us  7.3120us  7.3120us  cuDeviceGetName
+                    0.00%  3.8020us         1  3.8020us  3.8020us  3.8020us  cuDeviceGetPCIBusId
+                    0.00%     898ns         3     299ns     137ns     616ns  cuDeviceGetCount
+                    0.00%     460ns         2     230ns      98ns     362ns  cuDeviceGet
+                    0.00%     254ns         1     254ns     254ns     254ns  cuDeviceTotalMem
+                    0.00%     228ns         1     228ns     228ns     228ns  cuModuleGetLoadingMode
+                    0.00%     167ns         1     167ns     167ns     167ns  cuDeviceGetUuid
+==19183== NVPROF is profiling process 19183, command: ./cGA-IsoPeaks
+==19183== Profiling application: ./cGA-IsoPeaks
+==19183== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.15%  79.873ms     10000  7.9870us  7.3600us  9.0880us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.09%  33.206ms     20000  1.6600us     736ns  12.704us  [CUDA memcpy DtoH]
+                    7.73%  9.4716ms     20000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.03%  42.592us         1  42.592us  42.592us  42.592us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   74.08%  348.97ms     40000  8.7240us  2.4980us  241.92us  cudaMemcpy
+                   17.68%  83.268ms         5  16.654ms  1.6220us  83.259ms  cudaMalloc
+                    6.29%  29.643ms     10001  2.9630us  2.6390us  235.36us  cudaLaunchKernel
+                    1.90%  8.9597ms         1  8.9597ms  8.9597ms  8.9597ms  cuLibraryLoadData
+                    0.04%  172.69us       114  1.5140us     212ns  67.349us  cuDeviceGetAttribute
+                    0.00%  17.175us         4  4.2930us  2.7850us  7.9220us  cudaFree
+                    0.00%  13.087us         1  13.087us  13.087us  13.087us  cuDeviceGetName
+                    0.00%  7.6740us         1  7.6740us  7.6740us  7.6740us  cuDeviceGetPCIBusId
+                    0.00%  1.9230us         3     641ns     354ns  1.2050us  cuDeviceGetCount
+                    0.00%  1.1460us         2     573ns     247ns     899ns  cuDeviceGet
+                    0.00%     492ns         1     492ns     492ns     492ns  cuDeviceTotalMem
+                    0.00%     485ns         1     485ns     485ns     485ns  cuModuleGetLoadingMode
+                    0.00%     444ns         1     444ns     444ns     444ns  cuDeviceGetUuid
+==19198== NVPROF is profiling process 19198, command: ./cGA-IsoPeaks
+==19198== Profiling application: ./cGA-IsoPeaks
+==19198== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   64.58%  155.90ms     20000  7.7940us  6.8480us  9.3760us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.56%  66.540ms     40000  1.6630us     896ns  12.800us  [CUDA memcpy DtoH]
+                    7.85%  18.941ms     40000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.02%  42.656us         1  42.656us  42.656us  42.656us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.02%  700.72ms     80000  8.7590us  2.2320us  243.37us  cudaMemcpy
+                    8.93%  75.355ms         5  15.071ms  1.6780us  75.346ms  cudaMalloc
+                    7.37%  62.218ms     20001  3.1100us  2.8150us  232.61us  cudaLaunchKernel
+                    0.67%  5.6449ms         1  5.6449ms  5.6449ms  5.6449ms  cuLibraryLoadData
+                    0.01%  84.457us       114     740ns      93ns  33.314us  cuDeviceGetAttribute
+                    0.00%  16.558us         4  4.1390us  2.5630us  7.7290us  cudaFree
+                    0.00%  8.5760us         1  8.5760us  8.5760us  8.5760us  cuDeviceGetName
+                    0.00%  3.6710us         1  3.6710us  3.6710us  3.6710us  cuDeviceGetPCIBusId
+                    0.00%     933ns         3     311ns     133ns     648ns  cuDeviceGetCount
+                    0.00%     467ns         2     233ns     101ns     366ns  cuDeviceGet
+                    0.00%     248ns         1     248ns     248ns     248ns  cuDeviceTotalMem
+                    0.00%     223ns         1     223ns     223ns     223ns  cuModuleGetLoadingMode
+                    0.00%     167ns         1     167ns     167ns     167ns  cuDeviceGetUuid
+==19213== NVPROF is profiling process 19213, command: ./cGA-IsoPeaks
+==19213== Profiling application: ./cGA-IsoPeaks
+==19213== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   71.48%  10.107ms      1000  10.106us  9.4390us  11.200us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   21.52%  3.0429ms      2000  1.5210us     896ns  7.1680us  [CUDA memcpy DtoH]
+                    6.70%  947.80us      2000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.30%  42.752us         1  42.752us  42.752us  42.752us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   65.75%  89.127ms         5  17.825ms  1.5470us  89.118ms  cudaMalloc
+                   26.06%  35.329ms      4000  8.8320us  2.6190us  26.807us  cudaMemcpy
+                    5.88%  7.9664ms         1  7.9664ms  7.9664ms  7.9664ms  cuLibraryLoadData
+                    2.17%  2.9384ms      1001  2.9350us  2.7910us  22.031us  cudaLaunchKernel
+                    0.11%  153.89us       114  1.3490us     170ns  60.603us  cuDeviceGetAttribute
+                    0.01%  12.220us         1  12.220us  12.220us  12.220us  cuDeviceGetName
+                    0.01%  11.689us         4  2.9220us  2.0560us  4.4780us  cudaFree
+                    0.01%  7.0090us         1  7.0090us  7.0090us  7.0090us  cuDeviceGetPCIBusId
+                    0.00%  1.6380us         3     546ns     285ns  1.0530us  cuDeviceGetCount
+                    0.00%     928ns         2     464ns     204ns     724ns  cuDeviceGet
+                    0.00%     490ns         1     490ns     490ns     490ns  cuDeviceTotalMem
+                    0.00%     436ns         1     436ns     436ns     436ns  cuDeviceGetUuid
+                    0.00%     418ns         1     418ns     418ns     418ns  cuModuleGetLoadingMode
+==19228== NVPROF is profiling process 19228, command: ./cGA-IsoPeaks
+==19228== Profiling application: ./cGA-IsoPeaks
+==19228== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   71.97%  50.329ms      5000  10.065us  9.2800us  11.296us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   21.19%  14.820ms     10000  1.4820us     736ns  12.160us  [CUDA memcpy DtoH]
+                    6.77%  4.7370ms     10000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.06%  42.303us         1  42.303us  42.303us  42.303us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   60.58%  174.51ms     20000  8.7250us  2.4460us  237.84us  cudaMemcpy
+                   31.42%  90.511ms         5  18.102ms  1.6620us  90.502ms  cudaMalloc
+                    5.39%  15.530ms      5001  3.1050us  2.8530us  232.26us  cudaLaunchKernel
+                    2.55%  7.3371ms         1  7.3371ms  7.3371ms  7.3371ms  cuLibraryLoadData
+                    0.05%  131.73us       114  1.1550us     133ns  49.243us  cuDeviceGetAttribute
+                    0.01%  15.175us         4  3.7930us  2.4120us  6.8890us  cudaFree
+                    0.00%  9.2950us         1  9.2950us  9.2950us  9.2950us  cuDeviceGetName
+                    0.00%  4.4600us         1  4.4600us  4.4600us  4.4600us  cuDeviceGetPCIBusId
+                    0.00%  2.2430us         3     747ns     185ns  1.8400us  cuDeviceGetCount
+                    0.00%     729ns         2     364ns     157ns     572ns  cuDeviceGet
+                    0.00%     323ns         1     323ns     323ns     323ns  cuDeviceTotalMem
+                    0.00%     290ns         1     290ns     290ns     290ns  cuDeviceGetUuid
+                    0.00%     279ns         1     279ns     279ns     279ns  cuModuleGetLoadingMode
+==19243== NVPROF is profiling process 19243, command: ./cGA-IsoPeaks
+==19243== Profiling application: ./cGA-IsoPeaks
+==19243== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   72.04%  100.65ms     10000  10.065us  9.4080us  11.296us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   21.13%  29.518ms     20000  1.4750us     896ns  13.824us  [CUDA memcpy DtoH]
+                    6.80%  9.5037ms     20000     475ns     319ns  1.4720us  [CUDA memcpy HtoD]
+                    0.03%  42.720us         1  42.720us  42.720us  42.720us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   74.21%  347.55ms     40000  8.6880us  2.1410us  240.99us  cudaMemcpy
+                   17.56%  82.228ms         5  16.446ms  1.7520us  82.219ms  cudaMalloc
+                    6.63%  31.039ms     10001  3.1030us  2.8040us  235.25us  cudaLaunchKernel
+                    1.57%  7.3686ms         1  7.3686ms  7.3686ms  7.3686ms  cuLibraryLoadData
+                    0.03%  131.24us       114  1.1510us     160ns  50.041us  cuDeviceGetAttribute
+                    0.00%  17.327us         4  4.3310us  2.7690us  7.9740us  cudaFree
+                    0.00%  10.137us         1  10.137us  10.137us  10.137us  cuDeviceGetName
+                    0.00%  7.2510us         1  7.2510us  7.2510us  7.2510us  cuDeviceGetPCIBusId
+                    0.00%  1.6120us         3     537ns     213ns  1.1210us  cuDeviceGetCount
+                    0.00%     899ns         2     449ns     198ns     701ns  cuDeviceGet
+                    0.00%     382ns         1     382ns     382ns     382ns  cuDeviceTotalMem
+                    0.00%     376ns         1     376ns     376ns     376ns  cuModuleGetLoadingMode
+                    0.00%     372ns         1     372ns     372ns     372ns  cuDeviceGetUuid
+==19258== NVPROF is profiling process 19258, command: ./cGA-IsoPeaks
+==19258== Profiling application: ./cGA-IsoPeaks
+==19258== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   71.49%  200.13ms     20000  10.006us  9.3440us  11.488us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   21.72%  60.803ms     40000  1.5200us     896ns  14.784us  [CUDA memcpy DtoH]
+                    6.77%  18.952ms     40000     473ns     319ns  1.4080us  [CUDA memcpy HtoD]
+                    0.02%  42.207us         1  42.207us  42.207us  42.207us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   82.27%  690.99ms     80000  8.6370us  2.1120us  242.01us  cudaMemcpy
+                    9.70%  81.449ms         5  16.290ms  1.6950us  81.440ms  cudaMalloc
+                    7.11%  59.742ms     20001  2.9860us  2.7570us  233.18us  cudaLaunchKernel
+                    0.90%  7.5319ms         1  7.5319ms  7.5319ms  7.5319ms  cuLibraryLoadData
+                    0.02%  139.10us       114  1.2200us     164ns  54.035us  cuDeviceGetAttribute
+                    0.00%  16.638us         4  4.1590us  2.7000us  7.5070us  cudaFree
+                    0.00%  10.295us         1  10.295us  10.295us  10.295us  cuDeviceGetName
+                    0.00%  9.0760us         1  9.0760us  9.0760us  9.0760us  cuDeviceGetPCIBusId
+                    0.00%  1.5650us         3     521ns     261ns  1.0400us  cuDeviceGetCount
+                    0.00%     851ns         2     425ns     175ns     676ns  cuDeviceGet
+                    0.00%     420ns         1     420ns     420ns     420ns  cuDeviceTotalMem
+                    0.00%     344ns         1     344ns     344ns     344ns  cuModuleGetLoadingMode
+                    0.00%     320ns         1     320ns     320ns     320ns  cuDeviceGetUuid
+==19273== NVPROF is profiling process 19273, command: ./cGA-IsoPeaks
+==19273== Profiling application: ./cGA-IsoPeaks
+==19273== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   67.94%  9.1062ms      1000  9.1060us  8.7040us  10.817us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   24.60%  3.2980ms      2000  1.6480us     896ns  2.1120us  [CUDA memcpy DtoH]
+                    7.09%  950.81us      2000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.37%  48.992us         1  48.992us  48.992us  48.992us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   61.05%  70.021ms         5  14.004ms  1.6950us  70.012ms  cudaMalloc
+                   30.31%  34.768ms      4000  8.6920us  2.6540us  24.354us  cudaMemcpy
+                    5.98%  6.8638ms         1  6.8638ms  6.8638ms  6.8638ms  cuLibraryLoadData
+                    2.51%  2.8828ms      1001  2.8790us  2.7390us  20.308us  cudaLaunchKernel
+                    0.11%  131.02us       114  1.1490us     156ns  49.961us  cuDeviceGetAttribute
+                    0.01%  11.395us         4  2.8480us  2.1510us  4.3310us  cudaFree
+                    0.01%  10.687us         1  10.687us  10.687us  10.687us  cuDeviceGetName
+                    0.01%  8.6410us         1  8.6410us  8.6410us  8.6410us  cuDeviceGetPCIBusId
+                    0.00%  1.4760us         3     492ns     248ns     973ns  cuDeviceGetCount
+                    0.00%     824ns         2     412ns     171ns     653ns  cuDeviceGet
+                    0.00%     402ns         1     402ns     402ns     402ns  cuDeviceTotalMem
+                    0.00%     336ns         1     336ns     336ns     336ns  cuModuleGetLoadingMode
+                    0.00%     285ns         1     285ns     285ns     285ns  cuDeviceGetUuid
+==19288== NVPROF is profiling process 19288, command: ./cGA-IsoPeaks
+==19288== Profiling application: ./cGA-IsoPeaks
+==19288== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   67.65%  44.885ms      5000  8.9770us  8.5760us  10.848us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   25.11%  16.660ms     10000  1.6660us     896ns  9.9520us  [CUDA memcpy DtoH]
+                    7.16%  4.7517ms     10000     475ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.07%  48.288us         1  48.288us  48.288us  48.288us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   64.61%  174.45ms     20000  8.7220us  2.3420us  240.97us  cudaMemcpy
+                   27.33%  73.779ms         5  14.756ms  1.5780us  73.770ms  cudaMalloc
+                    5.54%  14.969ms      5001  2.9930us  2.7410us  231.61us  cudaLaunchKernel
+                    2.41%  6.5013ms         1  6.5013ms  6.5013ms  6.5013ms  cuLibraryLoadData
+                    0.09%  234.33us       114  2.0550us     293ns  90.063us  cuDeviceGetAttribute
+                    0.01%  20.544us         1  20.544us  20.544us  20.544us  cuDeviceGetName
+                    0.01%  15.661us         4  3.9150us  2.8270us  6.5060us  cudaFree
+                    0.00%  9.8580us         1  9.8580us  9.8580us  9.8580us  cuDeviceGetPCIBusId
+                    0.00%  2.9230us         3     974ns     424ns  2.0460us  cuDeviceGetCount
+                    0.00%  1.4380us         2     719ns     375ns  1.0630us  cuDeviceGet
+                    0.00%     761ns         1     761ns     761ns     761ns  cuDeviceTotalMem
+                    0.00%     648ns         1     648ns     648ns     648ns  cuModuleGetLoadingMode
+                    0.00%     592ns         1     592ns     592ns     592ns  cuDeviceGetUuid
+==19303== NVPROF is profiling process 19303, command: ./cGA-IsoPeaks
+==19303== Profiling application: ./cGA-IsoPeaks
+==19303== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   67.66%  89.527ms     10000  8.9520us  8.5760us  10.848us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   25.12%  33.244ms     20000  1.6620us     896ns  15.264us  [CUDA memcpy DtoH]
+                    7.18%  9.5038ms     20000     475ns     319ns  1.3440us  [CUDA memcpy HtoD]
+                    0.04%  48.672us         1  48.672us  48.672us  48.672us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   76.53%  348.83ms     40000  8.7200us  2.1560us  243.64us  cudaMemcpy
+                   15.45%  70.424ms         5  14.085ms  1.6900us  70.415ms  cudaMalloc
+                    6.82%  31.069ms     10001  3.1060us  2.8030us  233.86us  cudaLaunchKernel
+                    1.18%  5.3803ms         1  5.3803ms  5.3803ms  5.3803ms  cuLibraryLoadData
+                    0.02%  93.916us       114     823ns      86ns  32.755us  cuDeviceGetAttribute
+                    0.00%  16.791us         4  4.1970us  2.6480us  7.6370us  cudaFree
+                    0.00%  7.4450us         1  7.4450us  7.4450us  7.4450us  cuDeviceGetName
+                    0.00%  3.5600us         1  3.5600us  3.5600us  3.5600us  cuDeviceGetPCIBusId
+                    0.00%  1.2830us         3     427ns     130ns  1.0180us  cuDeviceGetCount
+                    0.00%     618ns         2     309ns     103ns     515ns  cuDeviceGet
+                    0.00%     374ns         1     374ns     374ns     374ns  cuDeviceTotalMem
+                    0.00%     184ns         1     184ns     184ns     184ns  cuModuleGetLoadingMode
+                    0.00%     146ns         1     146ns     146ns     146ns  cuDeviceGetUuid
+==19318== NVPROF is profiling process 19318, command: ./cGA-IsoPeaks
+==19318== Profiling application: ./cGA-IsoPeaks
+==19318== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   67.84%  180.25ms     20000  9.0120us  8.6070us  10.880us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   25.00%  66.426ms     40000  1.6600us     736ns  15.008us  [CUDA memcpy DtoH]
+                    7.14%  18.963ms     40000     474ns     319ns  1.5040us  [CUDA memcpy HtoD]
+                    0.02%  48.896us         1  48.896us  48.896us  48.896us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.81%  700.77ms     80000  8.7590us  2.3740us  244.39us  cudaMemcpy
+                    8.61%  72.005ms         5  14.401ms  1.5700us  71.996ms  cudaMalloc
+                    6.86%  57.372ms     20001  2.8680us  2.5820us  230.12us  cudaLaunchKernel
+                    0.70%  5.8650ms         1  5.8650ms  5.8650ms  5.8650ms  cuLibraryLoadData
+                    0.01%  94.106us       114     825ns      88ns  32.270us  cuDeviceGetAttribute
+                    0.00%  25.511us         1  25.511us  25.511us  25.511us  cuDeviceGetName
+                    0.00%  16.590us         4  4.1470us  3.1400us  6.9800us  cudaFree
+                    0.00%  3.4730us         1  3.4730us  3.4730us  3.4730us  cuDeviceGetPCIBusId
+                    0.00%     821ns         3     273ns     130ns     561ns  cuDeviceGetCount
+                    0.00%     446ns         1     446ns     446ns     446ns  cuDeviceTotalMem
+                    0.00%     407ns         2     203ns      93ns     314ns  cuDeviceGet
+                    0.00%     214ns         1     214ns     214ns     214ns  cuModuleGetLoadingMode
+                    0.00%     144ns         1     144ns     144ns     144ns  cuDeviceGetUuid
+==19333== NVPROF is profiling process 19333, command: ./cGA-Max-Ones
+==19333== Profiling application: ./cGA-Max-Ones
+==19333== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   59.14%  6.2305ms      1000  6.2300us  5.8880us  6.9120us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   31.46%  3.3150ms      2000  1.6570us     896ns  2.1120us  [CUDA memcpy DtoH]
+                    8.99%  947.59us      2000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.41%  42.720us         1  42.720us  42.720us  42.720us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   64.36%  82.958ms         5  16.592ms  1.6820us  82.949ms  cudaMalloc
+                   26.94%  34.730ms      4000  8.6820us  2.5670us  20.522us  cudaMemcpy
+                    6.28%  8.0945ms         1  8.0945ms  8.0945ms  8.0945ms  cuLibraryLoadData
+                    2.30%  2.9664ms      1001  2.9630us  2.8070us  19.406us  cudaLaunchKernel
+                    0.09%  115.03us       114  1.0090us     131ns  44.550us  cuDeviceGetAttribute
+                    0.01%  11.920us         4  2.9800us  2.2840us  4.7930us  cudaFree
+                    0.01%  10.124us         1  10.124us  10.124us  10.124us  cuDeviceGetName
+                    0.00%  4.8200us         1  4.8200us  4.8200us  4.8200us  cuDeviceGetPCIBusId
+                    0.00%  1.3840us         3     461ns     207ns     942ns  cuDeviceGetCount
+                    0.00%     763ns         2     381ns     139ns     624ns  cuDeviceGet
+                    0.00%     629ns         1     629ns     629ns     629ns  cuDeviceTotalMem
+                    0.00%     334ns         1     334ns     334ns     334ns  cuModuleGetLoadingMode
+                    0.00%     239ns         1     239ns     239ns     239ns  cuDeviceGetUuid
+==19348== NVPROF is profiling process 19348, command: ./cGA-Max-Ones
+==19348== Profiling application: ./cGA-Max-Ones
+==19348== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   59.26%  31.119ms      5000  6.2230us  5.8880us  6.7840us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   31.64%  16.613ms     10000  1.6610us     896ns  12.416us  [CUDA memcpy DtoH]
+                    9.02%  4.7377ms     10000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.08%  43.136us         1  43.136us  43.136us  43.136us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   63.03%  174.47ms     20000  8.7230us  2.4600us  242.98us  cudaMemcpy
+                   29.56%  81.821ms         5  16.364ms  1.6440us  81.812ms  cudaMalloc
+                    5.28%  14.603ms      5001  2.9200us  2.6640us  231.85us  cudaLaunchKernel
+                    2.09%  5.7967ms         1  5.7967ms  5.7967ms  5.7967ms  cuLibraryLoadData
+                    0.03%  96.672us       114     848ns      90ns  45.330us  cuDeviceGetAttribute
+                    0.01%  15.451us         4  3.8620us  2.7210us  7.0220us  cudaFree
+                    0.00%  7.6390us         1  7.6390us  7.6390us  7.6390us  cuDeviceGetName
+                    0.00%  3.4020us         1  3.4020us  3.4020us  3.4020us  cuDeviceGetPCIBusId
+                    0.00%  1.3260us         3     442ns     141ns  1.0310us  cuDeviceGetCount
+                    0.00%     523ns         2     261ns     107ns     416ns  cuDeviceGet
+                    0.00%     269ns         1     269ns     269ns     269ns  cuDeviceTotalMem
+                    0.00%     172ns         1     172ns     172ns     172ns  cuModuleGetLoadingMode
+                    0.00%     160ns         1     160ns     160ns     160ns  cuDeviceGetUuid
+==19363== NVPROF is profiling process 19363, command: ./cGA-Max-Ones
+==19363== Profiling application: ./cGA-Max-Ones
+==19363== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   59.34%  62.263ms     10000  6.2260us  5.8560us  6.8160us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   31.56%  33.113ms     20000  1.6550us     896ns  14.272us  [CUDA memcpy DtoH]
+                    9.06%  9.5019ms     20000     475ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.04%  41.984us         1  41.984us  41.984us  41.984us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   72.78%  348.35ms     40000  8.7080us  2.2280us  242.85us  cudaMemcpy
+                   19.13%  91.578ms         5  18.316ms  1.5980us  91.569ms  cudaMalloc
+                    6.44%  30.831ms     10001  3.0820us  2.7550us  234.37us  cudaLaunchKernel
+                    1.61%  7.6959ms         1  7.6959ms  7.6959ms  7.6959ms  cuLibraryLoadData
+                    0.03%  139.14us       114  1.2200us     161ns  55.235us  cuDeviceGetAttribute
+                    0.00%  16.985us         4  4.2460us  2.6660us  7.8340us  cudaFree
+                    0.00%  11.875us         1  11.875us  11.875us  11.875us  cuDeviceGetName
+                    0.00%  7.3830us         1  7.3830us  7.3830us  7.3830us  cuDeviceGetPCIBusId
+                    0.00%  1.6210us         3     540ns     223ns  1.1600us  cuDeviceGetCount
+                    0.00%     872ns         2     436ns     185ns     687ns  cuDeviceGet
+                    0.00%     400ns         1     400ns     400ns     400ns  cuDeviceTotalMem
+                    0.00%     366ns         1     366ns     366ns     366ns  cuModuleGetLoadingMode
+                    0.00%     296ns         1     296ns     296ns     296ns  cuDeviceGetUuid
+==19378== NVPROF is profiling process 19378, command: ./cGA-Max-Ones
+==19378== Profiling application: ./cGA-Max-Ones
+==19378== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   59.25%  124.20ms     20000  6.2090us  5.8240us  6.7840us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   31.69%  66.441ms     40000  1.6610us     736ns  14.016us  [CUDA memcpy DtoH]
+                    9.04%  18.950ms     40000     473ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.02%  42.016us         1  42.016us  42.016us  42.016us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   80.95%  696.36ms     80000  8.7040us  2.0530us  241.85us  cudaMemcpy
+                   10.81%  93.008ms         5  18.602ms  1.7050us  92.999ms  cudaMalloc
+                    7.13%  61.321ms     20001  3.0650us  2.7580us  272.34us  cudaLaunchKernel
+                    1.08%  9.3144ms         1  9.3144ms  9.3144ms  9.3144ms  cuLibraryLoadData
+                    0.02%  174.64us       114  1.5310us     220ns  68.027us  cuDeviceGetAttribute
+                    0.00%  17.401us         4  4.3500us  2.7060us  8.2620us  cudaFree
+                    0.00%  14.851us         1  14.851us  14.851us  14.851us  cuDeviceGetName
+                    0.00%  7.4530us         1  7.4530us  7.4530us  7.4530us  cuDeviceGetPCIBusId
+                    0.00%  2.2040us         3     734ns     334ns  1.5050us  cuDeviceGetCount
+                    0.00%  1.0890us         2     544ns     231ns     858ns  cuDeviceGet
+                    0.00%     534ns         1     534ns     534ns     534ns  cuDeviceTotalMem
+                    0.00%     440ns         1     440ns     440ns     440ns  cuModuleGetLoadingMode
+                    0.00%     390ns         1     390ns     390ns     390ns  cuDeviceGetUuid
+==19393== NVPROF is profiling process 19393, command: ./cGA-Max-Ones
+==19393== Profiling application: ./cGA-Max-Ones
+==19393== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.75%  8.2512ms      1000  8.2510us  7.7120us  9.2800us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.32%  3.3035ms      2000  1.6510us     896ns  12.192us  [CUDA memcpy DtoH]
+                    7.58%  951.74us      2000     475ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.34%  42.912us         1  42.912us  42.912us  42.912us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   60.68%  68.294ms         5  13.659ms  1.6630us  68.285ms  cudaMalloc
+                   31.15%  35.052ms      4000  8.7620us  2.5350us  49.479us  cudaMemcpy
+                    5.30%  5.9612ms         1  5.9612ms  5.9612ms  5.9612ms  cuLibraryLoadData
+                    2.67%  3.0014ms      1001  2.9980us  2.8410us  27.140us  cudaLaunchKernel
+                    0.15%  173.58us       114  1.5220us      87ns  78.352us  cuDeviceGetAttribute
+                    0.02%  24.974us         1  24.974us  24.974us  24.974us  cuDeviceGetName
+                    0.01%  12.390us         4  3.0970us  2.2610us  5.1140us  cudaFree
+                    0.01%  12.126us         1  12.126us  12.126us  12.126us  cuDeviceGetPCIBusId
+                    0.00%  3.4840us         3  1.1610us     500ns  2.3650us  cuDeviceGetCount
+                    0.00%  1.8820us         2     941ns     395ns  1.4870us  cuDeviceGet
+                    0.00%     875ns         1     875ns     875ns     875ns  cuModuleGetLoadingMode
+                    0.00%     806ns         1     806ns     806ns     806ns  cuDeviceTotalMem
+                    0.00%     164ns         1     164ns     164ns     164ns  cuDeviceGetUuid
+==19408== NVPROF is profiling process 19408, command: ./cGA-Max-Ones
+==19408== Profiling application: ./cGA-Max-Ones
+==19408== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.90%  41.315ms      5000  8.2620us  7.6160us  9.1850us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.47%  16.597ms     10000  1.6590us     896ns  13.760us  [CUDA memcpy DtoH]
+                    7.56%  4.7411ms     10000     474ns     319ns     641ns  [CUDA memcpy HtoD]
+                    0.07%  43.232us         1  43.232us  43.232us  43.232us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   65.97%  174.64ms     20000  8.7320us  2.5440us  242.08us  cudaMemcpy
+                   26.15%  69.221ms         5  13.844ms  1.6380us  69.212ms  cudaMalloc
+                    5.79%  15.338ms      5001  3.0670us  2.7980us  232.28us  cudaLaunchKernel
+                    2.05%  5.4234ms         1  5.4234ms  5.4234ms  5.4234ms  cuLibraryLoadData
+                    0.03%  78.788us       114     691ns      89ns  32.410us  cuDeviceGetAttribute
+                    0.01%  14.840us         4  3.7100us  2.3090us  6.7790us  cudaFree
+                    0.00%  7.0420us         1  7.0420us  7.0420us  7.0420us  cuDeviceGetName
+                    0.00%  3.4580us         1  3.4580us  3.4580us  3.4580us  cuDeviceGetPCIBusId
+                    0.00%  1.3350us         3     445ns     134ns  1.0600us  cuDeviceGetCount
+                    0.00%     423ns         2     211ns     102ns     321ns  cuDeviceGet
+                    0.00%     282ns         1     282ns     282ns     282ns  cuDeviceTotalMem
+                    0.00%     197ns         1     197ns     197ns     197ns  cuModuleGetLoadingMode
+                    0.00%     168ns         1     168ns     168ns     168ns  cuDeviceGetUuid
+==19423== NVPROF is profiling process 19423, command: ./cGA-Max-Ones
+==19423== Profiling application: ./cGA-Max-Ones
+==19423== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.95%  83.009ms     10000  8.3000us  7.6480us  9.2160us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.46%  33.307ms     20000  1.6650us     864ns  14.688us  [CUDA memcpy DtoH]
+                    7.55%  9.5004ms     20000     475ns     319ns  1.4720us  [CUDA memcpy HtoD]
+                    0.03%  41.888us         1  41.888us  41.888us  41.888us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   73.96%  349.31ms     40000  8.7320us  2.1390us  239.70us  cudaMemcpy
+                   18.52%  87.482ms         5  17.496ms  1.5460us  87.473ms  cudaMalloc
+                    6.08%  28.726ms     10001  2.8720us  2.6080us  230.18us  cudaLaunchKernel
+                    1.40%  6.5968ms         1  6.5968ms  6.5968ms  6.5968ms  cuLibraryLoadData
+                    0.02%  116.39us       114  1.0200us     141ns  45.520us  cuDeviceGetAttribute
+                    0.00%  16.847us         4  4.2110us  2.7590us  7.7100us  cudaFree
+                    0.00%  9.0740us         1  9.0740us  9.0740us  9.0740us  cuDeviceGetName
+                    0.00%  6.6250us         1  6.6250us  6.6250us  6.6250us  cuDeviceGetPCIBusId
+                    0.00%  1.2400us         3     413ns     189ns     825ns  cuDeviceGetCount
+                    0.00%     667ns         2     333ns     155ns     512ns  cuDeviceGet
+                    0.00%     309ns         1     309ns     309ns     309ns  cuDeviceTotalMem
+                    0.00%     279ns         1     279ns     279ns     279ns  cuModuleGetLoadingMode
+                    0.00%     245ns         1     245ns     245ns     245ns  cuDeviceGetUuid
+==19438== NVPROF is profiling process 19438, command: ./cGA-Max-Ones
+==19438== Profiling application: ./cGA-Max-Ones
+==19438== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.84%  165.40ms     20000  8.2690us  7.6160us  9.0560us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.60%  66.834ms     40000  1.6700us     896ns  14.720us  [CUDA memcpy DtoH]
+                    7.54%  18.954ms     40000     473ns     319ns  1.3760us  [CUDA memcpy HtoD]
+                    0.02%  42.848us         1  42.848us  42.848us  42.848us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.30%  690.24ms     80000  8.6280us  2.1510us  243.35us  cudaMemcpy
+                    8.36%  69.268ms         5  13.854ms  1.6360us  69.259ms  cudaMalloc
+                    7.38%  61.195ms     20001  3.0590us  2.7960us  232.68us  cudaLaunchKernel
+                    0.94%  7.7711ms         1  7.7711ms  7.7711ms  7.7711ms  cuLibraryLoadData
+                    0.02%  141.47us       114  1.2400us     164ns  55.961us  cuDeviceGetAttribute
+                    0.00%  17.138us         4  4.2840us  2.9800us  7.5250us  cudaFree
+                    0.00%  11.409us         1  11.409us  11.409us  11.409us  cuDeviceGetName
+                    0.00%  7.3620us         1  7.3620us  7.3620us  7.3620us  cuDeviceGetPCIBusId
+                    0.00%  2.3310us         3     777ns     241ns  1.8450us  cuDeviceGetCount
+                    0.00%     853ns         2     426ns     183ns     670ns  cuDeviceGet
+                    0.00%     409ns         1     409ns     409ns     409ns  cuDeviceTotalMem
+                    0.00%     352ns         1     352ns     352ns     352ns  cuModuleGetLoadingMode
+                    0.00%     276ns         1     276ns     276ns     276ns  cuDeviceGetUuid
+==19453== NVPROF is profiling process 19453, command: ./cGA-Max-Ones
+==19453== Profiling application: ./cGA-Max-Ones
+==19453== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   63.20%  7.4056ms      1000  7.4050us  7.1360us  8.3840us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   28.29%  3.3155ms      2000  1.6570us     928ns  1.8560us  [CUDA memcpy DtoH]
+                    8.08%  946.49us      2000     473ns     320ns     640ns  [CUDA memcpy HtoD]
+                    0.43%  50.080us         1  50.080us  50.080us  50.080us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   62.88%  85.430ms         5  17.086ms  1.6160us  85.421ms  cudaMalloc
+                   25.43%  34.555ms      4000  8.6380us  2.4580us  20.315us  cudaMemcpy
+                    9.25%  12.568ms         1  12.568ms  12.568ms  12.568ms  cuLibraryLoadData
+                    2.22%  3.0133ms      1001  3.0100us  2.8630us  23.043us  cudaLaunchKernel
+                    0.19%  255.59us       114  2.2420us     310ns  95.137us  cuDeviceGetAttribute
+                    0.02%  20.392us         1  20.392us  20.392us  20.392us  cuDeviceGetName
+                    0.01%  11.613us         4  2.9030us  2.0870us  4.4000us  cudaFree
+                    0.01%  10.823us         1  10.823us  10.823us  10.823us  cuDeviceGetPCIBusId
+                    0.00%  3.9240us         3  1.3080us     492ns  2.9040us  cuDeviceGetCount
+                    0.00%  1.8770us         2     938ns     327ns  1.5500us  cuDeviceGet
+                    0.00%     790ns         1     790ns     790ns     790ns  cuDeviceTotalMem
+                    0.00%     709ns         1     709ns     709ns     709ns  cuModuleGetLoadingMode
+                    0.00%     551ns         1     551ns     551ns     551ns  cuDeviceGetUuid
+==19468== NVPROF is profiling process 19468, command: ./cGA-Max-Ones
+==19468== Profiling application: ./cGA-Max-Ones
+==19468== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   63.41%  37.047ms      5000  7.4090us  7.1360us  8.2550us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   28.38%  16.579ms     10000  1.6570us     896ns  10.624us  [CUDA memcpy DtoH]
+                    8.14%  4.7542ms     10000     475ns     319ns  1.2800us  [CUDA memcpy HtoD]
+                    0.08%  48.256us         1  48.256us  48.256us  48.256us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   58.55%  174.64ms     20000  8.7320us  2.3540us  239.44us  cudaMemcpy
+                   32.95%  98.298ms         5  19.660ms  1.6470us  98.290ms  cudaMalloc
+                    5.17%  15.433ms      5001  3.0850us  2.8010us  233.39us  cudaLaunchKernel
+                    3.24%  9.6665ms         1  9.6665ms  9.6665ms  9.6665ms  cuLibraryLoadData
+                    0.07%  203.62us       114  1.7860us     239ns  84.959us  cuDeviceGetAttribute
+                    0.01%  16.932us         1  16.932us  16.932us  16.932us  cuDeviceGetName
+                    0.01%  15.013us         4  3.7530us  2.6860us  5.9980us  cudaFree
+                    0.00%  10.659us         1  10.659us  10.659us  10.659us  cuDeviceGetPCIBusId
+                    0.00%  2.5420us         3     847ns     370ns  1.7780us  cuDeviceGetCount
+                    0.00%  1.3410us         2     670ns     276ns  1.0650us  cuDeviceGet
+                    0.00%     582ns         1     582ns     582ns     582ns  cuDeviceTotalMem
+                    0.00%     496ns         1     496ns     496ns     496ns  cuModuleGetLoadingMode
+                    0.00%     432ns         1     432ns     432ns     432ns  cuDeviceGetUuid
+==19483== NVPROF is profiling process 19483, command: ./cGA-Max-Ones
+==19483== Profiling application: ./cGA-Max-Ones
+==19483== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   66.01%  87.415ms     10000  8.7410us  7.1680us  12.800us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   25.52%  33.801ms     20000  1.6900us     704ns  11.616us  [CUDA memcpy DtoH]
+                    8.44%  11.172ms     20000     558ns     319ns  1.6640us  [CUDA memcpy HtoD]
+                    0.04%  48.224us         1  48.224us  48.224us  48.224us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   73.01%  360.83ms     40000  9.0200us  2.4710us  240.46us  cudaMemcpy
+                   18.94%  93.595ms         5  18.719ms  1.6200us  93.586ms  cudaMalloc
+                    6.23%  30.805ms     10001  3.0800us  2.7550us  234.91us  cudaLaunchKernel
+                    1.78%  8.7875ms         1  8.7875ms  8.7875ms  8.7875ms  cuLibraryLoadData
+                    0.03%  163.56us       114  1.4340us     190ns  65.323us  cuDeviceGetAttribute
+                    0.00%  16.794us         4  4.1980us  2.8030us  7.8530us  cudaFree
+                    0.00%  12.750us         1  12.750us  12.750us  12.750us  cuDeviceGetName
+                    0.00%  6.1120us         1  6.1120us  6.1120us  6.1120us  cuDeviceGetPCIBusId
+                    0.00%  1.8760us         3     625ns     293ns  1.1920us  cuDeviceGetCount
+                    0.00%  1.0730us         2     536ns     218ns     855ns  cuDeviceGet
+                    0.00%     522ns         1     522ns     522ns     522ns  cuDeviceTotalMem
+                    0.00%     520ns         1     520ns     520ns     520ns  cuModuleGetLoadingMode
+                    0.00%     407ns         1     407ns     407ns     407ns  cuDeviceGetUuid
+==19498== NVPROF is profiling process 19498, command: ./cGA-Max-Ones
+==19498== Profiling application: ./cGA-Max-Ones
+==19498== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   63.58%  149.37ms     20000  7.4680us  7.1670us  8.1600us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   28.31%  66.516ms     40000  1.6620us     895ns  15.103us  [CUDA memcpy DtoH]
+                    8.09%  18.999ms     40000     474ns     319ns  1.6640us  [CUDA memcpy HtoD]
+                    0.02%  48.735us         1  48.735us  48.735us  48.735us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.39%  695.31ms     80000  8.6910us  2.0740us  244.21us  cudaMemcpy
+                    8.71%  72.589ms         5  14.518ms  1.7070us  72.580ms  cudaMalloc
+                    7.23%  60.249ms     20001  3.0120us  2.7590us  229.64us  cudaLaunchKernel
+                    0.67%  5.5652ms         1  5.5652ms  5.5652ms  5.5652ms  cuLibraryLoadData
+                    0.01%  83.946us       114     736ns      95ns  33.726us  cuDeviceGetAttribute
+                    0.00%  17.386us         4  4.3460us  2.8650us  7.7110us  cudaFree
+                    0.00%  8.1270us         1  8.1270us  8.1270us  8.1270us  cuDeviceGetName
+                    0.00%  4.2810us         1  4.2810us  4.2810us  4.2810us  cuDeviceGetPCIBusId
+                    0.00%     916ns         3     305ns     128ns     623ns  cuDeviceGetCount
+                    0.00%     516ns         2     258ns     106ns     410ns  cuDeviceGet
+                    0.00%     256ns         1     256ns     256ns     256ns  cuDeviceTotalMem
+                    0.00%     197ns         1     197ns     197ns     197ns  cuModuleGetLoadingMode
+                    0.00%     174ns         1     174ns     174ns     174ns  cuDeviceGetUuid
+==19513== NVPROF is profiling process 19513, command: ./cGA-MMDP
+==19513== Profiling application: ./cGA-MMDP
+==19513== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   56.55%  7.7522ms      1000  7.7520us  7.3280us  8.5120us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   34.06%  4.6690ms      2000  2.3340us     896ns  3.2320us  [CUDA memcpy DtoH]
+                    9.08%  1.2446ms      2000     622ns     319ns     961ns  [CUDA memcpy HtoD]
+                    0.31%  42.400us         1  42.400us  42.400us  42.400us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   58.19%  69.332ms         5  13.866ms  1.7130us  69.322ms  cudaMalloc
+                   31.52%  37.557ms      4000  9.3890us  3.0330us  34.546us  cudaMemcpy
+                    7.61%  9.0722ms         1  9.0722ms  9.0722ms  9.0722ms  cuLibraryLoadData
+                    2.55%  3.0413ms      1001  3.0380us  2.9090us  22.487us  cudaLaunchKernel
+                    0.09%  111.73us       114     980ns     131ns  43.483us  cuDeviceGetAttribute
+                    0.01%  11.617us         4  2.9040us  2.2510us  4.3950us  cudaFree
+                    0.01%  10.074us         1  10.074us  10.074us  10.074us  cuDeviceGetName
+                    0.00%  4.4210us         1  4.4210us  4.4210us  4.4210us  cuDeviceGetPCIBusId
+                    0.00%  1.4120us         3     470ns     194ns     996ns  cuDeviceGetCount
+                    0.00%     576ns         2     288ns     126ns     450ns  cuDeviceGet
+                    0.00%     377ns         1     377ns     377ns     377ns  cuDeviceTotalMem
+                    0.00%     277ns         1     277ns     277ns     277ns  cuModuleGetLoadingMode
+                    0.00%     236ns         1     236ns     236ns     236ns  cuDeviceGetUuid
+==19528== NVPROF is profiling process 19528, command: ./cGA-MMDP
+==19528== Profiling application: ./cGA-MMDP
+==19528== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   56.61%  38.700ms      5000  7.7390us  7.2000us  8.5120us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   34.23%  23.402ms     10000  2.3400us     896ns  15.680us  [CUDA memcpy DtoH]
+                    9.10%  6.2216ms     10000     622ns     319ns     961ns  [CUDA memcpy HtoD]
+                    0.06%  41.791us         1  41.791us  41.791us  41.791us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   62.22%  187.90ms     20000  9.3940us  3.0710us  244.94us  cudaMemcpy
+                   29.11%  87.908ms         5  17.582ms  1.6240us  87.898ms  cudaMalloc
+                    5.08%  15.328ms      5001  3.0650us  2.8210us  235.92us  cudaLaunchKernel
+                    3.51%  10.603ms         1  10.603ms  10.603ms  10.603ms  cuLibraryLoadData
+                    0.06%  190.48us       114  1.6700us     242ns  73.178us  cuDeviceGetAttribute
+                    0.01%  15.847us         1  15.847us  15.847us  15.847us  cuDeviceGetName
+                    0.01%  15.453us         4  3.8630us  2.6540us  6.8910us  cudaFree
+                    0.00%  10.879us         1  10.879us  10.879us  10.879us  cuDeviceGetPCIBusId
+                    0.00%  2.5870us         3     862ns     380ns  1.7890us  cuDeviceGetCount
+                    0.00%  1.3630us         2     681ns     281ns  1.0820us  cuDeviceGet
+                    0.00%     576ns         1     576ns     576ns     576ns  cuDeviceTotalMem
+                    0.00%     489ns         1     489ns     489ns     489ns  cuModuleGetLoadingMode
+                    0.00%     459ns         1     459ns     459ns     459ns  cuDeviceGetUuid
+==19543== NVPROF is profiling process 19543, command: ./cGA-MMDP
+==19543== Profiling application: ./cGA-MMDP
+==19543== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   56.52%  77.269ms     10000  7.7260us  7.1040us  8.4800us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   34.35%  46.966ms     20000  2.3480us     736ns  15.201us  [CUDA memcpy DtoH]
+                    9.10%  12.440ms     20000     622ns     319ns  1.9840us  [CUDA memcpy HtoD]
+                    0.03%  42.496us         1  42.496us  42.496us  42.496us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   75.46%  370.25ms     40000  9.2560us  2.2480us  239.59us  cudaMemcpy
+                   16.26%  79.771ms         5  15.954ms  1.6060us  79.762ms  cudaMalloc
+                    6.50%  31.897ms     10001  3.1890us  2.8760us  231.93us  cudaLaunchKernel
+                    1.74%  8.5183ms         1  8.5183ms  8.5183ms  8.5183ms  cuLibraryLoadData
+                    0.03%  164.44us       114  1.4420us     198ns  63.845us  cuDeviceGetAttribute
+                    0.00%  18.271us         4  4.5670us  2.8060us  8.9390us  cudaFree
+                    0.00%  12.693us         1  12.693us  12.693us  12.693us  cuDeviceGetName
+                    0.00%  10.241us         1  10.241us  10.241us  10.241us  cuDeviceGetPCIBusId
+                    0.00%  2.1030us         3     701ns     315ns  1.4560us  cuDeviceGetCount
+                    0.00%     902ns         2     451ns     196ns     706ns  cuDeviceGet
+                    0.00%     507ns         1     507ns     507ns     507ns  cuModuleGetLoadingMode
+                    0.00%     478ns         1     478ns     478ns     478ns  cuDeviceTotalMem
+                    0.00%     376ns         1     376ns     376ns     376ns  cuDeviceGetUuid
+==19558== NVPROF is profiling process 19558, command: ./cGA-MMDP
+==19558== Profiling application: ./cGA-MMDP
+==19558== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   56.59%  154.63ms     20000  7.7310us  7.1680us  8.6080us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   34.29%  93.700ms     40000  2.3420us     896ns  15.455us  [CUDA memcpy DtoH]
+                    9.10%  24.874ms     40000     621ns     319ns  1.9840us  [CUDA memcpy HtoD]
+                    0.02%  42.976us         1  42.976us  42.976us  42.976us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   83.94%  740.77ms     80000  9.2590us  2.1320us  241.54us  cudaMemcpy
+                    8.50%  74.987ms         5  14.997ms  1.6370us  74.978ms  cudaMalloc
+                    6.81%  60.121ms     20001  3.0050us  2.7400us  227.46us  cudaLaunchKernel
+                    0.73%  6.4490ms         1  6.4490ms  6.4490ms  6.4490ms  cuLibraryLoadData
+                    0.01%  102.80us       114     901ns     120ns  41.633us  cuDeviceGetAttribute
+                    0.00%  16.392us         4  4.0980us  2.7570us  7.3660us  cudaFree
+                    0.00%  8.3710us         1  8.3710us  8.3710us  8.3710us  cuDeviceGetName
+                    0.00%  4.0130us         1  4.0130us  4.0130us  4.0130us  cuDeviceGetPCIBusId
+                    0.00%  1.7010us         3     567ns     170ns  1.3490us  cuDeviceGetCount
+                    0.00%     655ns         2     327ns     128ns     527ns  cuDeviceGet
+                    0.00%     307ns         1     307ns     307ns     307ns  cuDeviceTotalMem
+                    0.00%     271ns         1     271ns     271ns     271ns  cuModuleGetLoadingMode
+                    0.00%     220ns         1     220ns     220ns     220ns  cuDeviceGetUuid
+==19573== NVPROF is profiling process 19573, command: ./cGA-MMDP
+==19573== Profiling application: ./cGA-MMDP
+==19573== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   64.76%  10.467ms      1000  10.467us  9.0240us  12.128us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.28%  4.4085ms      2000  2.2040us     896ns  3.4550us  [CUDA memcpy DtoH]
+                    7.69%  1.2433ms      2000     621ns     319ns     960ns  [CUDA memcpy HtoD]
+                    0.27%  43.968us         1  43.968us  43.968us  43.968us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   58.06%  68.538ms         5  13.708ms  1.7380us  68.529ms  cudaMalloc
+                   33.93%  40.051ms      4000  10.012us  3.0270us  29.458us  cudaMemcpy
+                    5.38%  6.3511ms         1  6.3511ms  6.3511ms  6.3511ms  cuLibraryLoadData
+                    2.52%  2.9786ms      1001  2.9750us  2.8290us  19.304us  cudaLaunchKernel
+                    0.07%  80.976us       114     710ns      88ns  32.579us  cuDeviceGetAttribute
+                    0.02%  20.950us         1  20.950us  20.950us  20.950us  cuDeviceGetName
+                    0.01%  13.988us         1  13.988us  13.988us  13.988us  cuDeviceGetPCIBusId
+                    0.01%  11.403us         4  2.8500us  2.1930us  4.4940us  cudaFree
+                    0.00%  4.3980us         3  1.4660us     110ns  3.5640us  cuDeviceGetCount
+                    0.00%     516ns         2     258ns     110ns     406ns  cuDeviceGet
+                    0.00%     322ns         1     322ns     322ns     322ns  cuDeviceTotalMem
+                    0.00%     219ns         1     219ns     219ns     219ns  cuModuleGetLoadingMode
+                    0.00%     147ns         1     147ns     147ns     147ns  cuDeviceGetUuid
+==19588== NVPROF is profiling process 19588, command: ./cGA-MMDP
+==19588== Profiling application: ./cGA-MMDP
+==19588== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   64.73%  52.181ms      5000  10.436us  8.9280us  12.128us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.49%  22.162ms     10000  2.2160us     896ns  14.591us  [CUDA memcpy DtoH]
+                    7.72%  6.2236ms     10000     622ns     319ns  1.9840us  [CUDA memcpy HtoD]
+                    0.05%  43.199us         1  43.199us  43.199us  43.199us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   68.42%  196.25ms     20000  9.8120us  2.1740us  241.42us  cudaMemcpy
+                   23.37%  67.043ms         5  13.409ms  1.6410us  67.034ms  cudaMalloc
+                    5.49%  15.739ms      5001  3.1470us  2.8620us  231.00us  cudaLaunchKernel
+                    2.63%  7.5478ms         1  7.5478ms  7.5478ms  7.5478ms  cuLibraryLoadData
+                    0.07%  194.94us       114  1.7100us     267ns  74.903us  cuDeviceGetAttribute
+                    0.01%  16.757us         1  16.757us  16.757us  16.757us  cuDeviceGetName
+                    0.01%  16.015us         4  4.0030us  3.0050us  6.7110us  cudaFree
+                    0.00%  10.135us         1  10.135us  10.135us  10.135us  cuDeviceGetPCIBusId
+                    0.00%  3.2280us         3  1.0760us     345ns  2.4890us  cuDeviceGetCount
+                    0.00%  1.3410us         2     670ns     253ns  1.0880us  cuDeviceGet
+                    0.00%     611ns         1     611ns     611ns     611ns  cuDeviceTotalMem
+                    0.00%     504ns         1     504ns     504ns     504ns  cuModuleGetLoadingMode
+                    0.00%     421ns         1     421ns     421ns     421ns  cuDeviceGetUuid
+==19603== NVPROF is profiling process 19603, command: ./cGA-MMDP
+==19603== Profiling application: ./cGA-MMDP
+==19603== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   65.71%  113.98ms     10000  11.398us  8.9280us  14.400us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   26.47%  45.922ms     20000  2.2960us     832ns  15.104us  [CUDA memcpy DtoH]
+                    7.79%  13.516ms     20000     675ns     319ns  1.9200us  [CUDA memcpy HtoD]
+                    0.02%  42.399us         1  42.399us  42.399us  42.399us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   79.22%  424.96ms     40000  10.624us  2.2150us  247.84us  cudaMemcpy
+                   13.87%  74.431ms         5  14.886ms  1.7470us  74.422ms  cudaMalloc
+                    5.87%  31.509ms     10001  3.1500us  2.8350us  229.04us  cudaLaunchKernel
+                    1.01%  5.4442ms         1  5.4442ms  5.4442ms  5.4442ms  cuLibraryLoadData
+                    0.02%  91.971us       114     806ns      86ns  31.638us  cuDeviceGetAttribute
+                    0.00%  16.599us         4  4.1490us  2.8240us  7.4310us  cudaFree
+                    0.00%  7.0780us         1  7.0780us  7.0780us  7.0780us  cuDeviceGetName
+                    0.00%  2.9870us         1  2.9870us  2.9870us  2.9870us  cuDeviceGetPCIBusId
+                    0.00%     933ns         3     311ns     119ns     681ns  cuDeviceGetCount
+                    0.00%     407ns         2     203ns      96ns     311ns  cuDeviceGet
+                    0.00%     270ns         1     270ns     270ns     270ns  cuDeviceTotalMem
+                    0.00%     199ns         1     199ns     199ns     199ns  cuModuleGetLoadingMode
+                    0.00%     168ns         1     168ns     168ns     168ns  cuDeviceGetUuid
+==19618== NVPROF is profiling process 19618, command: ./cGA-MMDP
+==19618== Profiling application: ./cGA-MMDP
+==19618== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   64.79%  209.59ms     20000  10.479us  8.8960us  11.745us  KernelCGA(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   27.50%  88.968ms     40000  2.2240us     895ns  17.087us  [CUDA memcpy DtoH]
+                    7.69%  24.882ms     40000     622ns     319ns  1.7910us  [CUDA memcpy HtoD]
+                    0.01%  43.616us         1  43.616us  43.616us  43.616us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   82.06%  800.76ms     80000  10.009us  2.1550us  277.47us  cudaMemcpy
+                   10.51%  102.52ms         5  20.503ms  1.6850us  102.51ms  cudaMalloc
+                    6.09%  59.412ms     20001  2.9700us  2.6860us  229.02us  cudaLaunchKernel
+                    1.31%  12.825ms         1  12.825ms  12.825ms  12.825ms  cuLibraryLoadData
+                    0.03%  249.36us       114  2.1870us     311ns  94.594us  cuDeviceGetAttribute
+                    0.00%  21.147us         1  21.147us  21.147us  21.147us  cuDeviceGetName
+                    0.00%  16.877us         4  4.2190us  2.7940us  7.4420us  cudaFree
+                    0.00%  11.384us         1  11.384us  11.384us  11.384us  cuDeviceGetPCIBusId
+                    0.00%  3.0140us         3  1.0040us     456ns  2.0160us  cuDeviceGetCount
+                    0.00%  1.5830us         2     791ns     325ns  1.2580us  cuDeviceGet
+                    0.00%     868ns         1     868ns     868ns     868ns  cuDeviceTotalMem
+                    0.00%     858ns         1     858ns     858ns     858ns  cuModuleGetLoadingMode
+                    0.00%     616ns         1     616ns     616ns     616ns  cuDeviceGetUuid
+==19633== NVPROF is profiling process 19633, command: ./cGA-MMDP
+==19633== Profiling application: ./cGA-MMDP
+==19633== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   61.34%  9.3653ms      1000  9.3650us  8.5440us  10.848us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   30.20%  4.6105ms      2000  2.3050us     896ns  3.2320us  [CUDA memcpy DtoH]
+                    8.15%  1.2437ms      2000     621ns     319ns     960ns  [CUDA memcpy HtoD]
+                    0.32%  49.216us         1  49.216us  49.216us  49.216us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   59.68%  67.781ms         5  13.556ms  1.6580us  67.772ms  cudaMalloc
+                   32.56%  36.975ms      4000  9.2430us  2.9790us  28.020us  cudaMemcpy
+                    4.97%  5.6469ms         1  5.6469ms  5.6469ms  5.6469ms  cuLibraryLoadData
+                    2.55%  2.9005ms      1001  2.8970us  2.7660us  19.801us  cudaLaunchKernel
+                    0.19%  211.15us       114  1.8520us      91ns  94.167us  cuDeviceGetAttribute
+                    0.02%  21.140us         1  21.140us  21.140us  21.140us  cuDeviceGetName
+                    0.01%  11.334us         4  2.8330us  2.2490us  4.2900us  cudaFree
+                    0.01%  10.495us         1  10.495us  10.495us  10.495us  cuDeviceGetPCIBusId
+                    0.00%  3.7860us         3  1.2620us     433ns  2.8040us  cuDeviceGetCount
+                    0.00%  1.8580us         2     929ns     365ns  1.4930us  cuDeviceGet
+                    0.00%     766ns         1     766ns     766ns     766ns  cuDeviceTotalMem
+                    0.00%     760ns         1     760ns     760ns     760ns  cuModuleGetLoadingMode
+                    0.00%     175ns         1     175ns     175ns     175ns  cuDeviceGetUuid
+==19648== NVPROF is profiling process 19648, command: ./cGA-MMDP
+==19648== Profiling application: ./cGA-MMDP
+==19648== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   61.26%  46.649ms      5000  9.3290us  8.4800us  11.040us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   30.51%  23.231ms     10000  2.3230us     896ns  15.232us  [CUDA memcpy DtoH]
+                    8.17%  6.2215ms     10000     622ns     319ns     961ns  [CUDA memcpy HtoD]
+                    0.06%  49.216us         1  49.216us  49.216us  49.216us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   62.26%  185.44ms     20000  9.2720us  2.9190us  257.61us  cudaMemcpy
+                   30.14%  89.784ms         5  17.957ms  1.6440us  89.774ms  cudaMalloc
+                    5.09%  15.157ms      5001  3.0300us  2.7750us  227.65us  cudaLaunchKernel
+                    2.47%  7.3425ms         1  7.3425ms  7.3425ms  7.3425ms  cuLibraryLoadData
+                    0.04%  112.59us       114     987ns     133ns  43.984us  cuDeviceGetAttribute
+                    0.00%  13.802us         4  3.4500us  2.4930us  5.7110us  cudaFree
+                    0.00%  10.267us         1  10.267us  10.267us  10.267us  cuDeviceGetName
+                    0.00%  3.9210us         1  3.9210us  3.9210us  3.9210us  cuDeviceGetPCIBusId
+                    0.00%  1.3320us         3     444ns     210ns     911ns  cuDeviceGetCount
+                    0.00%     699ns         2     349ns     156ns     543ns  cuDeviceGet
+                    0.00%     330ns         1     330ns     330ns     330ns  cuDeviceTotalMem
+                    0.00%     292ns         1     292ns     292ns     292ns  cuModuleGetLoadingMode
+                    0.00%     261ns         1     261ns     261ns     261ns  cuDeviceGetUuid
+==19663== NVPROF is profiling process 19663, command: ./cGA-MMDP
+==19663== Profiling application: ./cGA-MMDP
+==19663== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   62.57%  101.13ms     10000  10.112us  8.5120us  13.248us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   29.07%  46.979ms     20000  2.3480us     736ns  15.904us  [CUDA memcpy DtoH]
+                    8.34%  13.475ms     20000     673ns     319ns  2.1120us  [CUDA memcpy HtoD]
+                    0.03%  48.032us         1  48.032us  48.032us  48.032us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   78.35%  408.38ms     40000  10.209us  2.1100us  248.95us  cudaMemcpy
+                   14.16%  73.784ms         5  14.757ms  1.5620us  73.776ms  cudaMalloc
+                    6.01%  31.304ms     10001  3.1300us  2.8260us  232.57us  cudaLaunchKernel
+                    1.46%  7.5943ms         1  7.5943ms  7.5943ms  7.5943ms  cuLibraryLoadData
+                    0.03%  139.41us       114  1.2220us     158ns  54.178us  cuDeviceGetAttribute
+                    0.00%  16.614us         4  4.1530us  2.6740us  7.4000us  cudaFree
+                    0.00%  11.527us         1  11.527us  11.527us  11.527us  cuDeviceGetName
+                    0.00%  8.4130us         1  8.4130us  8.4130us  8.4130us  cuDeviceGetPCIBusId
+                    0.00%  1.6530us         3     551ns     222ns  1.1770us  cuDeviceGetCount
+                    0.00%     795ns         2     397ns     183ns     612ns  cuDeviceGet
+                    0.00%     480ns         1     480ns     480ns     480ns  cuDeviceTotalMem
+                    0.00%     385ns         1     385ns     385ns     385ns  cuModuleGetLoadingMode
+                    0.00%     340ns         1     340ns     340ns     340ns  cuDeviceGetUuid
+==19678== NVPROF is profiling process 19678, command: ./cGA-MMDP
+==19678== Profiling application: ./cGA-MMDP
+==19678== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   61.73%  189.09ms     20000  9.4540us  8.5120us  11.104us  KernelCGA2D(int*, int*, int*, int*, curandStateXORWOW*, int, int)
+                   30.14%  92.329ms     40000  2.3080us     896ns  21.824us  [CUDA memcpy DtoH]
+                    8.12%  24.874ms     40000     621ns     319ns  1.9840us  [CUDA memcpy HtoD]
+                    0.02%  48.832us         1  48.832us  48.832us  48.832us  setup_kernel(curandStateXORWOW*, unsigned long, int, int)
+      API calls:   82.38%  742.98ms     80000  9.2870us  2.1870us  293.82us  cudaMemcpy
+                   10.26%  92.505ms         5  18.501ms  1.6680us  92.496ms  cudaMalloc
+                    6.57%  59.257ms     20001  2.9620us  2.6720us  227.63us  cudaLaunchKernel
+                    0.78%  7.0019ms         1  7.0019ms  7.0019ms  7.0019ms  cuLibraryLoadData
+                    0.01%  111.81us       114     980ns     130ns  44.458us  cuDeviceGetAttribute
+                    0.00%  16.680us         4  4.1700us  2.7440us  7.6660us  cudaFree
+                    0.00%  9.6170us         1  9.6170us  9.6170us  9.6170us  cuDeviceGetName
+                    0.00%  4.3590us         1  4.3590us  4.3590us  4.3590us  cuDeviceGetPCIBusId
+                    0.00%  1.6480us         3     549ns     207ns  1.2150us  cuDeviceGetCount
+                    0.00%     631ns         2     315ns     134ns     497ns  cuDeviceGet
+                    0.00%     334ns         1     334ns     334ns     334ns  cuDeviceTotalMem
+                    0.00%     312ns         1     312ns     312ns     312ns  cuModuleGetLoadingMode
+                    0.00%     263ns         1     263ns     263ns     263ns  cuDeviceGetUuid
+
