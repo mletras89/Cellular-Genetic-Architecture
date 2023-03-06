@@ -19,11 +19,11 @@ const int C_SIZE  = 32;
 // inds 128
 const int N_COLS  = 4;
 const int N_ROWS  = 4;
-const int N_DEPTH = 8;
+const int N_DEPTH = 4;
 // inds 256
 //const int N_COLS  = 8;
 //const int N_ROWS  = 8;
-//const int N_DEPTH = 4;
+//const int N_DEPTH = 1;
 
 
 const int GENS  = 20000;
